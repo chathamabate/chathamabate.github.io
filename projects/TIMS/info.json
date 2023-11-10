@@ -6,10 +6,19 @@
     "month": 7,
     "year": 2022,
    
-    "link": "https://github.com/chathamabate/ti-code",
+    "links": [
+        {
+            "name": "Github",
+            "url": "https://github.com/chathamabate/ti-code"
+        },
+        {
+            "name": "Youtube",
+            "url": "https://www.youtube.com/watch?v=7cNblC0O0A0"
+        }
+    ],
 
-    "technologies": [
-        "Embedded C"
+    "skills": [
+        "C", "Embedded Systems"
     ],
 
     "description":  [

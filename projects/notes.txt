@@ -1,4 +1,9 @@
 
+The projects directory needs an info.json, this specifies every
+project to be considered.
+
+    projects: [string]
+
 Each project must have an info.json file at the top
 level of its directory.
 
@@ -8,8 +13,8 @@ info.json file must have the following keys:
     subtitle: string
     month: number (1-12)
     year: number 
-    link: string
-    technologies: [string]
+    links: [{name:string, url:string}]
+    skills: [string]
     description: [string]
 
 Each project must also have an imgs subdirectory.

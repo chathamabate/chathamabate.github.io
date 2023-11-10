@@ -1,0 +1,18 @@
+
+Each project must have an info.json file at the top
+level of its directory.
+
+info.json file must have the following keys:
+
+    title: string
+    subtitle: string
+    month: number (1-12)
+    year: number 
+    link: string
+    technologies: [string]
+    description: [string]
+
+Each project must also have an imgs subdirectory.
+
+    Format to come!
+

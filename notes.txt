@@ -1,0 +1,8 @@
+
+Let's first do projects, then we can move
+to the about section.
+
+I think we start a single page application.
+
+We can have a projects section with expandables.
+

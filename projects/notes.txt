@@ -15,9 +15,19 @@ info.json file must have the following keys:
     year: number 
     links: [{name:string, url:string}]
     skills: [string]
-    description: [[string]]
+    body: [
+        {
+            contentType: ("fg" | "pg")
+            
+            // if "fg"
+            relpath: string,
+            description: string
+
+            // if "pg"
+            lines: [string]
+        }
+    ]
     icon: string
-    figures: [{relpath:string, description:string}]
 
 NOTE: paths for icon and figures should be
 relative to the project subdirectory.

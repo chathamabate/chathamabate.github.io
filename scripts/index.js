@@ -29,10 +29,22 @@ function newHeaderTextContainer(info) {
     htc.classList.add("projectHeaderTextContainer");
 
     let titleDiv = newTextDiv("h1", info.title);
+
+    // Add links after the title.
+    for (const link of info.links) {
+        let s = document.createElement("span");
+        let ico = document.createElement("img");
+        // ico.src = link.iconUrl;
+        console.log(link);
+        s.appendChild(ico);
+        titleDiv.appendChild(s);
+    }
+
     htc.appendChild(titleDiv);
 
     let subtitleDiv = newTextDiv("h2", info.subtitle);
     htc.appendChild(subtitleDiv);
+
 
     return htc;
 }

@@ -33,6 +33,14 @@
         }
     ],
 
+    "description": [
+        [
+            "Ever since my introduction to C in college, I have been interested in retro computing and embedded systems.",
+            "Embedded systems often have fewer resources than typical computers.",
+            "So, writing software for such systems requires a strong understanding of compilers, operating systems, and hardware."
+        ]
+    ],
+
     "description":  [
         "This project brings Minesweeper to the TI-84 graphing calculator!",
         "Building Minesweeper in an embedded environment required a mix technical and artistic skills.",

@@ -34,8 +34,9 @@ function newHeaderTextContainer(info) {
     for (const link of info.links) {
         let s = document.createElement("span");
         let ico = document.createElement("img");
-        // ico.src = link.iconUrl;
         console.log(link);
+        ico.src = link.iconUrl;
+        ico.width = "32";
         s.appendChild(ico);
         titleDiv.appendChild(s);
     }

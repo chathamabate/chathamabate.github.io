@@ -9,11 +9,11 @@
    
     "links": [
         {
-            "iconUrl": "https://www.github.com/favicon.ico",
+            "faClass": "fa-github",
             "url": "https://www.github.com/chathamabate/ti-code"
         },
         {
-            "iconUrl": "https://www.youtube.com/favicon.ico",
+            "faClass": "fa-youtube-play",
             "url": "https://www.youtube.com/watch?v=7cNblC0O0A0"
         }
     ],

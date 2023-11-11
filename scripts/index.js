@@ -5,13 +5,13 @@ function newIcon(relpath) {
     let iconDiv = document.createElement("div");
     iconDiv.classList.add("iconContainer");
 
-
     let img = document.createElement("img");
     img.width = "200";
-    img.height = "100";
     img.src = GITHUB_URL + "/" + relpath;
 
-    return img;
+    iconDiv.appendChild(img);
+
+    return iconDiv;
 }
 
 function newTextDiv(tag, text) {

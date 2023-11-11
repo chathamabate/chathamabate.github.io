@@ -2,6 +2,8 @@
 body {
     background-color: rgb(220, 220, 255);
     padding: 20px;
+
+    font-family: FreeMono, monospace;
 }
 
 .project {
@@ -14,28 +16,40 @@ body {
 
 .projectHeader {
     display: flex;
-    flex-direction: horizontal;
+    flex-direction: row;
     color: red;
 }
 
 .iconContainer {
-    flex: 0;
-    border: 1px solid red;
-    border-radius: 20px;
+    flex: 1;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.iconContainer img {
+    width: 100%;
 }
 
 .projectHeaderTextContainer {
-    flex: 1;
+    flex: 3;
+    padding: 2%;
 }
 
 .projectHeaderTextContainer h1 {
+    font-weight: 200;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+
     margin: 0px;
-    color: red;
 }
 
 .projectHeaderTextContainer h2 {
+    font-weight: 200;
+    font-size: 1.2em;
+    color: rgb(50, 50, 50);
+
     margin: 0px;
-    color: blue;
 }
 
 

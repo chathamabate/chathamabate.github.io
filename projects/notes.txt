@@ -16,6 +16,8 @@ info.json file must have the following keys:
     links: [{name:string, url:string}]
     skills: [string]
     description: [string]
+    icon: string
+    figures: [{url:string, description:string}]
 
 Each project must also have an imgs subdirectory.
 

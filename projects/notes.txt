@@ -17,9 +17,8 @@ info.json file must have the following keys:
     skills: [string]
     description: [string]
     icon: string
-    figures: [{url:string, description:string}]
+    figures: [{relpath:string, description:string}]
 
-Each project must also have an imgs subdirectory.
-
-    Format to come!
+NOTE: paths for icon and figures should be
+relative to the project subdirectory.
 

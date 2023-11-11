@@ -1,5 +1,6 @@
 
 {
+    "icon": "projects/TIMS/imgs/logo.png",
     "title": "TI Minesweeper",
     "subtitle": "Classic Minesweeper on the TI-84 Graphing Calculator",
 
@@ -19,6 +20,17 @@
 
     "skills": [
         "C", "Embedded Systems"
+    ],
+
+    "firgures": [
+        {
+            "relpath": "project/TIMS/imgs/homescreen.png",
+            "description": "The home screen"
+        },
+        {
+            "relpath": "projects/TIMS/imgs/homescreen.png",
+            "description": "The home screen"
+        }
     ],
 
     "description":  [

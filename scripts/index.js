@@ -1,6 +1,19 @@
 
 const GITHUB_URL = "https://raw.githubusercontent.com/chathamabate/chathamabate.github.io/main";
 
+function newIcon(relpath) {
+    let iconDiv = document.createElement("div");
+    iconDiv.classList.add("iconContainer");
+
+
+    let img = document.createElement("img");
+    img.width = "200";
+    img.height = "100";
+    img.src = GITHUB_URL + "/" + relpath;
+
+    return img;
+}
+
 function newTextDiv(tag, text) {
     let div = document.createElement("div");
     let inner = document.createElement(tag);
@@ -11,15 +24,28 @@ function newTextDiv(tag, text) {
     return div;
 }
 
+function newHeaderTextContainer(info) {
+    let htc = document.createElement("div");
+    htc.classList.add("projectHeaderTextContainer");
+
+    let titleDiv = newTextDiv("h1", info.title);
+    htc.appendChild(titleDiv);
+
+    let subtitleDiv = newTextDiv("h2", info.subtitle);
+    htc.appendChild(subtitleDiv);
+
+    return htc;
+}
+
 function newProjectHeader(info) {
     let header = document.createElement("div");
     header.classList.add("projectHeader");
+    
+    let icon = newIcon(info.icon);
+    header.appendChild(icon);
 
-    let titleDiv = newTextDiv("h1", info.title);
-    header.appendChild(titleDiv);
-
-    let subtitleDiv = newTextDiv("h2", info.subtitle);
-    header.appendChild(subtitleDiv);
+    let htc = newHeaderTextContainer(info);
+    header.appendChild(htc);
 
     return header;
 }

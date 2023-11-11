@@ -13,15 +13,27 @@ body {
 }
 
 .projectHeader {
+    display: flex;
+    flex-direction: horizontal;
     color: red;
 }
 
-.projectHeader h1 {
+.iconContainer {
+    flex: 0;
+    border: 1px solid red;
+    border-radius: 20px;
+}
+
+.projectHeaderTextContainer {
+    flex: 1;
+}
+
+.projectHeaderTextContainer h1 {
     margin: 0px;
     color: red;
 }
 
-.projectHeader h2 {
+.projectHeaderTextContainer h2 {
     margin: 0px;
     color: blue;
 }

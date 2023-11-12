@@ -1,6 +1,16 @@
 
 const GITHUB_URL = "https://raw.githubusercontent.com/chathamabate/chathamabate.github.io/main";
 
+// Copied from some guy's blog.
+function getMonthName(monthNumber) {
+  const date = new Date();
+  date.setMonth(monthNumber - 1);
+
+  return date.toLocaleString('en-US', {
+    month: 'long',
+  });
+}
+
 function newIcon(relpath) {
     let iconDiv = document.createElement("div");
     iconDiv.classList.add("iconContainer");
@@ -28,23 +38,61 @@ function newHeaderTextContainer(info) {
     let htc = document.createElement("div");
     htc.classList.add("projectHeaderTextContainer");
 
-    let titleDiv = newTextDiv("h1", info.title);
+    // title div contains title and date?
+    let titleDiv = document.createElement("div");
+    titleDiv.classList.add("projectHeaderTitleDiv");
 
-    // Add links after the title.
-    for (const link of info.links) {
-        let s = document.createElement("span");
-        let ico = document.createElement("img");
-        console.log(link);
-        ico.src = link.iconUrl;
-        ico.width = "32";
-        s.appendChild(ico);
-        titleDiv.appendChild(s);
-    }
+    let titleSpan = document.createElement("span");
+    titleSpan.classList.add("projectHeaderTitle");
+    titleSpan.appendChild(document.createTextNode(info.title + " "));
+
+    titleDiv.appendChild(titleSpan);
+
+    let dateLabel = getMonthName(info.month) + " " + info.year;
+    let dateSpan = document.createElement("span");
+    dateSpan.classList.add("projectHeaderDate");
+    dateSpan.appendChild(document.createTextNode(dateLabel));
+
+    titleDiv.appendChild(dateSpan);
 
     htc.appendChild(titleDiv);
 
+    // Subtitle div contains just the description.
+    
     let subtitleDiv = newTextDiv("h2", info.subtitle);
     htc.appendChild(subtitleDiv);
+
+    // Now we create the specs div.
+    // Specs div includes Date | Skills used | links.
+    
+    let specsDiv = document.createElement("div");
+
+    let skillsSpan = document.createElement("span");
+    skillsSpan.classList.add("specSkills");
+
+    let skillsBold = document.createElement("b");
+    skillsBold.appendChild(document.createTextNode("Skills: "))
+    skillsSpan.appendChild(skillsBold);
+
+    let skillsText = document.createTextNode(info.skills.join(" "));
+    skillsSpan.appendChild(skillsText);
+
+    specsDiv.appendChild(skillsSpan);
+
+    htc.appendChild(specsDiv);
+
+
+    // Add links after the title.
+    /*
+    for (const link of info.links) {
+        let s = document.createElement("span");
+        let ico = document.createElement("i");
+
+        ico.classList.add("fa", link.faClass);
+
+        s.appendChild(ico);
+    }
+    */
 
 
     return htc;

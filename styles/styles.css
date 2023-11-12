@@ -6,6 +6,11 @@ body {
     font-family: FreeMono, monospace;
 }
 
+/* Fa Icons */
+i {
+    color: black;
+}
+
 .project {
     background-color: white;
     border: 1px solid black;
@@ -36,20 +41,43 @@ body {
     padding: 2%;
 }
 
-.projectHeaderTextContainer h1 {
-    font-weight: 200;
-    font-size: 2em;
+.projectHeaderTitleDiv {
+    font-size: 1.2em;
     color: rgb(0, 0, 0);
 
-    margin: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.projectHeaderTitle {
+    flex: 2;
+    font-weight: 600;
+}
+
+.projectHeaderDate {
+    font-style: italic;
+    flex: 1;
+    text-align: right;
 }
 
 .projectHeaderTextContainer h2 {
     font-weight: 200;
-    font-size: 1.2em;
+    font-size: 1.0em;
     color: rgb(50, 50, 50);
 
     margin: 0px;
+}
+
+.specDate {
+    color: black;
+}
+
+.specSkills {
+    color: black;
+}
+
+.specSkills b {
+
 }
 
 

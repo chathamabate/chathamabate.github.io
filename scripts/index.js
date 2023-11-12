@@ -11,6 +11,8 @@ function getMonthName(monthNumber) {
   });
 }
 
+/* Project Header Functions */
+
 function newIcon(relpath) {
     let iconDiv = document.createElement("div");
     iconDiv.classList.add("iconContainer");
@@ -97,6 +99,53 @@ function newProjectHeader(info) {
     return header;
 }
 
+function newBodyFigure(content) {
+    let figureDiv = document.createElement("div");
+    figureDiv.classList.add("projectFigureDiv");
+
+    let figure = document.createElement("img");
+    figure.classList.add("projectFigure");
+    figure.src = GITHUB_URL + "/" + content.relpath;
+    figureDiv.appendChild(figure);
+
+    let description = document.createElement("div");
+    description.classList.add("projectFigureDescription");
+    description.appendChild(document.createTextNode(content.description));
+    figureDiv.appendChild(description);
+
+    return figureDiv;
+}
+
+function newBodyParagraph(content) {
+    let pgDiv = document.createElement("div");
+    pgDiv.classList.add("projectParagraph")
+
+    let pgString = content.lines.join(" ");
+    pgDiv.appendChild(document.createTextNode(pgString));
+
+    return pgDiv;
+}
+
+/* Project Body Section */
+
+function newProjectBody(info) {
+    let projectBodyDiv = document.createElement("div");
+    projectBodyDiv.classList.add("projectBody");
+
+    for (const content of info.body) {
+        let tag = content.contentType;
+
+        if (tag === "fg") {
+            projectBodyDiv.appendChild(newBodyFigure(content)); 
+        } else if (tag === "pg") {
+            projectBodyDiv.appendChild(newBodyParagraph(content)); 
+        }
+    }
+
+    return projectBodyDiv;
+}
+
+
 async function newProjectSection(dirname) {
     let info_res = await fetch(GITHUB_URL + "/projects/" + dirname + "/info.json");
     let info = await info_res.json();
@@ -107,6 +156,8 @@ async function newProjectSection(dirname) {
     let header = newProjectHeader(info);
     section.appendChild(header);
 
+    let body = newProjectBody(info);
+    section.appendChild(body);
 
     return section;
 }

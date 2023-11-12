@@ -13,7 +13,7 @@ info.json file must have the following keys:
     subtitle: string
     month: number (1-12)
     year: number 
-    links: [{name:string, url:string}]
+    links: [{faClass:string, url:string}]
     skills: [string]
     body: [
         {

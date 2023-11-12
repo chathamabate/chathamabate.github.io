@@ -28,11 +28,11 @@ function getTimelineString(timeline) {
 
     // Same year, but different month.
     if (sy === ey) {
-        return smStr + "-" + emStr + " " + ey;
+        return smStr + "—" + emStr + " " + ey;
     }
 
     // Different year.
-    return smStr + " " + sy + "-" + emStr + " " + ey;
+    return smStr + " " + sy + "—" + emStr + " " + ey;
 }
 
 /* Project Header Functions */

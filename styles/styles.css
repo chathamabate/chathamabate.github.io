@@ -7,7 +7,7 @@ body {
 }
 
 .project {
-    background-color: white;
+    background-color: rgb(240, 240, 240); 
     border: 1px solid black;
     border-radius: 20px;
 
@@ -17,14 +17,16 @@ body {
 /* Project Header Styles */
 
 .projectHeader {
+    background-color: white;
     padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+
     display: flex;
     flex-direction: row;
 }
 
 .iconContainer {
     flex: 1;
-    display: none;
     align-items: center;
 }
 
@@ -99,5 +101,30 @@ body {
 
 /* Project Body Styles */
 
+.projectBody {
+    padding: 10px 20px 10px 20px;
+}
 
+.projectFigureDiv {
+    padding: 20px;
+}
+
+.projectFigure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.projectFigureDescription {
+    text-align: center;
+    color: rgb(50, 50, 50);
+    font-size: .9em;
+    font-style: italic;
+    padding-top: 3px;
+}
+
+.projectParagraph {
+    font-size: 1.0em;
+}
 

@@ -11,8 +11,12 @@ info.json file must have the following keys:
 
     title: string
     subtitle: string
-    month: number (1-12)
-    year: number 
+
+    timeline: [
+        [startMonth, startYear],
+        [endMonth, endYear]
+    ]
+
     links: [{faClass:string, url:string}]
     skills: [string]
     body: [

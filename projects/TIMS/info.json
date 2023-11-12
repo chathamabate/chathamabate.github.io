@@ -4,8 +4,10 @@
     "title": "TI Minesweeper",
     "subtitle": "Classic Minesweeper on the TI-84 Graphing Calculator",
 
-    "month": 7,
-    "year": 2022,
+    "timeline": [
+        [7, 2022],
+        [7, 2022]
+    ],
    
     "links": [
         {

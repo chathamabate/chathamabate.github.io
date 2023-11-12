@@ -11,6 +11,30 @@ function getMonthName(monthNumber) {
   });
 }
 
+function getTimelineString(timeline) {
+    let sm = timeline[0][0];
+    let sy = timeline[0][1];
+
+    let em = timeline[1][0];
+    let ey = timeline[1][1];
+
+    // Same start and end.
+    if (sm === em && sy === ey) {
+        return getMonthName(sm) + " " + sy;
+    }
+
+    let smStr = getMonthName(sm);
+    let emStr = getMonthName(em);
+
+    // Same year, but different month.
+    if (sy === ey) {
+        return smStr + "–" + emStr + " " + ey;
+    }
+
+    // Different year.
+    return smStr + " " + sy + "–" + emStr + " " + ey;
+}
+
 /* Project Header Functions */
 
 function newIcon(relpath) {
@@ -30,7 +54,7 @@ function newHeaderTextContainer(info) {
     let htc = document.createElement("div");
     htc.classList.add("projectHeaderTextContainer");
 
-    // title div contains title and date?
+    // title div contains title and date.
     let titleDiv = document.createElement("div");
     titleDiv.classList.add("projectHeaderTitleDiv");
 
@@ -40,7 +64,7 @@ function newHeaderTextContainer(info) {
 
     titleDiv.appendChild(titleSpan);
 
-    let dateLabel = getMonthName(info.month) + " " + info.year;
+    let dateLabel = getTimelineString(info.timeline);
     let dateSpan = document.createElement("span");
     dateSpan.classList.add("projectHeaderDate");
     dateSpan.appendChild(document.createTextNode(dateLabel));
@@ -91,13 +115,15 @@ function newProjectHeader(info) {
     header.classList.add("projectHeader");
     
     let icon = newIcon(info.icon);
-    header.appendChild(icon);
+    // header.appendChild(icon);
 
     let htc = newHeaderTextContainer(info);
     header.appendChild(htc);
 
     return header;
 }
+
+/* Project Body Section */
 
 function newBodyFigure(content) {
     let figureDiv = document.createElement("div");
@@ -125,8 +151,6 @@ function newBodyParagraph(content) {
 
     return pgDiv;
 }
-
-/* Project Body Section */
 
 function newProjectBody(info) {
     let projectBodyDiv = document.createElement("div");

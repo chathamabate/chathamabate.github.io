@@ -42,7 +42,7 @@ body {
     display: flex;
     justify-content: space-between;
 
-    font-size: 1.2em;
+    font-size: 1.2rem;
     color: rgb(0, 0, 0);
 }
 
@@ -58,7 +58,7 @@ body {
     padding-top: 4px;
 
     font-weight: 200;
-    font-size: 1.0em;
+    font-size: 1.0rem;
     color: rgb(50, 50, 50);
 
     margin: 0px;
@@ -72,14 +72,14 @@ body {
 }
 
 .projectHeaderSkillsSpan {
-    padding-top: .9em;
-    font-size: .9em;
+    padding-top: .9rem;
+    font-size: .9rem;
     font-style: italic;
 }
 
 .projectHeaderLinksSpan {
-    line-height: 0em;  
-    font-size: 1.8em;
+    line-height: 0rem;  
+    font-size: 1.8rem;
 }
 
 .projectHeaderLinksSpan a {
@@ -119,12 +119,12 @@ body {
 .projectFigureDescription {
     text-align: center;
     color: rgb(50, 50, 50);
-    font-size: .9em;
+    font-size: .9rem;
     font-style: italic;
     padding-top: 3px;
 }
 
 .projectParagraph {
-    font-size: 1.0em;
+    font-size: 1.0rem;
 }
 

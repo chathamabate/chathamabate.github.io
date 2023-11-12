@@ -6,11 +6,6 @@ body {
     font-family: FreeMono, monospace;
 }
 
-/* Fa Icons */
-i {
-    color: black;
-}
-
 .project {
     background-color: white;
     border: 1px solid black;
@@ -20,14 +15,13 @@ i {
 }
 
 .projectHeader {
+    padding: 10px 20px 10px 20px;
     display: flex;
     flex-direction: row;
-    color: red;
 }
 
 .iconContainer {
     flex: 1;
-    padding: 2%;
     display: flex;
     align-items: center;
 }
@@ -38,7 +32,6 @@ i {
 
 .projectHeaderTextContainer {
     flex: 3;
-    padding: 2%;
 }
 
 .projectHeaderTitleDiv {
@@ -60,7 +53,9 @@ i {
     text-align: right;
 }
 
-.projectHeaderTextContainer h2 {
+.projectHeaderSubtitle {
+    padding-top: 4px;
+
     font-weight: 200;
     font-size: 1.0em;
     color: rgb(50, 50, 50);
@@ -68,16 +63,44 @@ i {
     margin: 0px;
 }
 
-.specDate {
+.projectHeaderSkillsDiv {
     color: black;
+
+    display: flex;
+    flex-direction: row;
 }
 
-.specSkills {
-    color: black;
+.projectHeaderSkillsSpan {
+    padding-top: .9em;
+    flex: 2;
+    font-size: .9em;
+
+    font-style: italic;
 }
 
-.specSkills b {
+.projectHeaderLinksSpan {
+    flex: 1;
+    font-size: 1.8em;
+    line-height: 0em;   /* Take out all awkward spacing! */
+    text-align: right;
+    
+}
 
+.projectHeaderLinksSpan a {
+    padding: 3px;
+    padding-bottom: 0px;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    color: black;
+    text-decoration: none;
+    transition-duration: .3s;
+}
+
+.projectHeaderLinksSpan a:hover {
+    color: white;
+    background-color: black;
 }
 
 

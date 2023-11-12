@@ -24,16 +24,6 @@ function newIcon(relpath) {
     return iconDiv;
 }
 
-function newTextDiv(tag, text) {
-    let div = document.createElement("div");
-    let inner = document.createElement(tag);
-
-    inner.appendChild(document.createTextNode(text));
-    div.appendChild(inner);
-
-    return div;
-}
-
 function newHeaderTextContainer(info) {
     let htc = document.createElement("div");
     htc.classList.add("projectHeaderTextContainer");
@@ -59,41 +49,37 @@ function newHeaderTextContainer(info) {
 
     // Subtitle div contains just the description.
     
-    let subtitleDiv = newTextDiv("h2", info.subtitle);
+    let subtitleDiv = document.createElement("div");
+    subtitleDiv.classList.add("projectHeaderSubtitle");
+    subtitleDiv.appendChild(document.createTextNode(info.subtitle));
     htc.appendChild(subtitleDiv);
 
-    // Now we create the specs div.
-    // Specs div includes Date | Skills used | links.
+    // Now we create the skills div.
+    // Skills used | links.
     
-    let specsDiv = document.createElement("div");
+    let skillsDiv = document.createElement("div");
+    skillsDiv.classList.add("projectHeaderSkillsDiv");
 
     let skillsSpan = document.createElement("span");
-    skillsSpan.classList.add("specSkills");
+    skillsSpan.classList.add("projectHeaderSkillsSpan");
 
-    let skillsBold = document.createElement("b");
-    skillsBold.appendChild(document.createTextNode("Skills: "))
-    skillsSpan.appendChild(skillsBold);
-
-    let skillsText = document.createTextNode(info.skills.join(" "));
+    let skillsText = document.createTextNode(info.skills.join(", "));
     skillsSpan.appendChild(skillsText);
+    skillsDiv.appendChild(skillsSpan);
 
-    specsDiv.appendChild(skillsSpan);
+    let linksSpan = document.createElement("span");
+    linksSpan.classList.add("projectHeaderLinksSpan");
 
-    htc.appendChild(specsDiv);
-
-
-    // Add links after the title.
-    /*
     for (const link of info.links) {
-        let s = document.createElement("span");
-        let ico = document.createElement("i");
-
-        ico.classList.add("fa", link.faClass);
-
-        s.appendChild(ico);
+        let l = document.createElement("a");
+        l.classList.add("fa", link.faClass);
+        l.href = link.url;
+        linksSpan.appendChild(l);
     }
-    */
+    skillsDiv.appendChild(linksSpan);
 
+
+    htc.appendChild(skillsDiv);
 
     return htc;
 }

@@ -114,7 +114,7 @@ function newProjectHeader(info) {
     let header = document.createElement("div");
     header.classList.add("projectHeader");
     
-    let icon = newIcon(info.icon);
+    // let icon = newIcon(info.icon);
     // header.appendChild(icon);
 
     let htc = newHeaderTextContainer(info);
@@ -156,7 +156,19 @@ function newProjectBody(info) {
     let projectBodyDiv = document.createElement("div");
     projectBodyDiv.classList.add("projectBody");
 
-    for (const content of info.body) {
+    let j = [];
+    
+    for (let i = 0; i < info.body.length; i++) {
+
+        // Add in divider.
+        if (i > 0) {
+            let divider = document.createElement("div");
+            divider.classList.add("contentDivider");
+            projectBodyDiv.appendChild(divider);
+        }
+
+        const content = info.body[i];
+
         let tag = content.contentType;
 
         if (tag === "fg") {
@@ -165,6 +177,7 @@ function newProjectBody(info) {
             projectBodyDiv.appendChild(newBodyParagraph(content)); 
         }
     }
+
 
     return projectBodyDiv;
 }
@@ -195,7 +208,6 @@ async function main() {
     for (const subdir of info.projects) {
         s = await newProjectSection(subdir);
         body.appendChild(s);
-        console.log(s.info);
     }
 }
 

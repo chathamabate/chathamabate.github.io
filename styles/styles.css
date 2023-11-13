@@ -104,12 +104,15 @@ body {
 
 /* Project Body Styles */
 
+.contentDivider {
+    height: 20px;
+}
+
 .projectBody {
     padding: 10px 20px 10px 20px;
 }
 
 .projectFigureDiv {
-    padding: 20px;
 }
 
 .projectFigure {

@@ -23,8 +23,8 @@
     "skills": [
         "C",
         "Unix",
-        "Multiprocessing",
-        "Make"
+        "Make",
+        "Multiprocessing"
     ],
 
     "body": [
@@ -63,8 +63,9 @@
                 "Managing multiple processes safely was the most challenging part of this project.",
                 "I needed to ensure that CH-Unit successfully terminated all of its child processes before exiting.",
                 "Otherwise, stray test processes could potentially persist indefinitely on the user’s machine.",
-                "In retrospect, choosing a multiprocessed design for CH-Unit was definitely worth the risk! In conquering the intricacies of various Unix system calls, I improved my C programming skills and created a tool comparable to that of JUnit and GoogleTest."
-        ] 
+                "In retrospect, choosing a multiprocessed design for CH-Unit was definitely worth the risk!",
+                "By conquering the intricacies of various Unix system calls, I improved my C programming skills and created a tool comparable to JUnit and GoogleTest."
+            ] 
         }, 
         {
             "contentType": "pg",

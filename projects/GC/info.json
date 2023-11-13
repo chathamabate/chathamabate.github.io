@@ -1,8 +1,8 @@
 
 {
     "icon": "projects/GC/imgs/logo.png",
-    "title": "Concurrent C Garbage Collector",
-    "subtitle": "Subtitle to come...",
+    "title": "Tri-Color Garbage Collector",
+    "subtitle": "An Entirely Concurrent Memory Management System for C",
 
     "timeline": [
         [12, 2022],

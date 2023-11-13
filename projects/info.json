@@ -1,6 +1,7 @@
 
 {
     "projects": [
+        "CHunit",
         "TIMS"
     ]
 }

@@ -1,0 +1,37 @@
+
+{
+    "icon": "projects/CHUnit/imgs/logo.png",
+    "title": "CH-Unit",
+    "subtitle": "Multiprocessed C Testing Framework for Unix Systems",
+
+    "timeline": [
+        [9, 2022],
+        [12, 2022]
+    ],
+   
+    "links": [
+        {
+            "faClass": "fa-github",
+            "url": "https://www.github.com/chathamabate/chvm"
+        },
+        {
+            "faClass": "fa-youtube-play",
+            "url": "https://youtu.be/6odDwfECc2U?si=78vb0uiB7X9b9LYH"
+        }
+    ],
+
+    "skills": [
+        "C",
+        "Unix",
+        "Multiprocessing",
+        "Multithreading"
+    ],
+
+    "body": [
+        {
+            "contentType": "pg",
+            "lines": [
+            ]
+        }
+    ]
+}

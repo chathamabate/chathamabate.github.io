@@ -1,0 +1,32 @@
+
+{
+    "icon": "projects/GC/imgs/logo.png",
+    "title": "Concurrent C Garbage Collector",
+    "subtitle": "Subtitle to come...",
+
+    "timeline": [
+        [12, 2022],
+        [2, 2023]
+    ],
+
+    "links": [
+        {
+            "faClass": "fa-github",
+            "url": "https://www.github.com/chathamabate/chvm"
+        },
+        {
+            "faClass": "fa-youtube-play",
+            "url": "https://youtu.be/hEqIBsL_e-c?si=_yXkFuXUIk5dXjdD"
+        }
+    ],    
+
+    "skills": [
+        "C",
+        "Unix",
+        "Make",
+        "Multithreading"
+    ],
+    "body": [
+
+    ]
+}

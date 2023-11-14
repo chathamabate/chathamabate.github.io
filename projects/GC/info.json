@@ -1,6 +1,5 @@
 
 {
-    "icon": "projects/GC/imgs/logo.png",
     "title": "Tri-Color Garbage Collector",
     "subtitle": "Concurrent Memory Manager for C",
 

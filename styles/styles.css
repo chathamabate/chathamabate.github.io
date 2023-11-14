@@ -28,15 +28,6 @@ body {
     flex-direction: row;
 }
 
-.iconContainer {
-    flex: 1;
-    align-items: center;
-}
-
-.iconContainer img {
-    width: 100%;
-}
-
 .projectHeaderTextContainer {
     flex: 3;
 }

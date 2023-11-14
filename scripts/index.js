@@ -37,19 +37,6 @@ function getTimelineString(timeline) {
 
 /* Project Header Functions */
 
-function newIcon(relpath) {
-    let iconDiv = document.createElement("div");
-    iconDiv.classList.add("iconContainer");
-
-    let img = document.createElement("img");
-    img.width = "200";
-    img.src = GITHUB_URL + "/" + relpath;
-
-    iconDiv.appendChild(img);
-
-    return iconDiv;
-}
-
 function newHeaderTextContainer(info) {
     let htc = document.createElement("div");
     htc.classList.add("projectHeaderTextContainer");
@@ -114,6 +101,7 @@ function newProjectHeader(info) {
     let header = document.createElement("div");
     header.classList.add("projectHeader");
     
+    // Just going to leave this here in case.
     // let icon = newIcon(info.icon);
     // header.appendChild(icon);
 

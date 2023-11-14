@@ -1,6 +1,5 @@
 
 {
-    "icon": "projects/TIMS/imgs/logo.png",
     "title": "TI Minesweeper",
     "subtitle": "Classic Minesweeper on the TI-84 Graphing Calculator",
 
@@ -37,8 +36,8 @@
         },
         {
             "contentType": "fg",
-            "relpath": "projects/TIMS/imgs/homescreen.png",
-            "description": "The home screen"
+            "relpath": "projects/TIMS/imgs/MS_Homescreen.png",
+            "description": "The TI Minesweeper main menu."
         },
         {
             "contentType": "pg",
@@ -50,8 +49,8 @@
         },
         {
             "contentType": "fg",
-            "relpath": "projects/TIMS/imgs/homescreen.png",
-            "description": "The home screen"
+            "relpath": "projects/TIMS/imgs/MS_Gameplay.png",
+            "description": "Example gameplay on the medium difficulty."
         },
         {
             "contentType": "pg",
@@ -65,8 +64,8 @@
         },
         {
             "contentType": "fg",
-            "relpath": "projects/TIMS/imgs/homescreen.png",
-            "description": "The home screen"
+            "relpath": "projects/TIMS/imgs/MS_Emu.png",
+            "description": "TI Minesweeper running in the CEmu emulator."
         },
         {
             "contentType": "pg",

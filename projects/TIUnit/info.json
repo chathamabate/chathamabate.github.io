@@ -34,6 +34,11 @@
             ]
         },
         {
+            "contentType": "fg",
+            "relpath": "projects/TIUnit/imgs/TIUnit_Menu.png",
+            "description": "A selection of user defined tests."
+        }, 
+        {
             "contentType": "pg",
             "lines": [
                 "The project allows the user to define standalone tests or groups of tests known as suites.",
@@ -43,6 +48,11 @@
                 "The various provided menus and text panes allow the user to easily execute tests and read output."
             ]
         },
+        {
+            "contentType": "fg",
+            "relpath": "projects/TIUnit/imgs/TIUnit_Output.png",
+            "description": "Output of a single test."
+        }, 
         {
             "contentType": "pg",
             "lines": [
@@ -54,6 +64,11 @@
                 "Additionally, I used the long jump system call to simulate test exceptions."
             ]
         },
+        {
+            "contentType": "fg",
+            "relpath": "projects/TIUnit/imgs/TIUnit_Test.png",
+            "description": "A test for confirming an array is sorted."
+        }, 
         {
             "contentType": "pg",
             "lines": [

@@ -38,6 +38,11 @@
             ] 
         }, 
         {
+            "contentType": "fg",
+            "relpath": "projects/CHUnit/imgs/CHUnit_Output.png",
+            "description": "Example CHUnit test output."
+        }, 
+        {
 
             "contentType": "pg",
             "lines": [
@@ -55,6 +60,11 @@
                 "Test results are returned in memory and can be reported in any way the user sees fit.",
                 "For convenience, CH-Unit provides helper functions for printing test results to the terminal."
             ] 
+        }, 
+        {
+            "contentType": "fg",
+            "relpath": "projects/CHUnit/imgs/CHUnit_Test.png",
+            "description": "Example CHUnit unit test definition."
         }, 
         {
             "contentType": "pg",

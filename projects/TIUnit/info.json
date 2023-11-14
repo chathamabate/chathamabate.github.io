@@ -1,0 +1,67 @@
+
+{
+    "icon": "projects/TIUnit/imgs/logo.png",
+    "title": "TI-Unit",
+    "subtitle": "C++ Testing Framework for the TI-84 Graphing Calculator",
+
+    "timeline": [
+        [8, 2023],
+        [8, 2023]
+    ],
+
+    "links": [
+        {
+            "faClass": "fa-github",
+            "url": "https://www.github.com/chathamabate/ti-code"
+        },
+        {
+            "faClass": "fa-youtube-play",
+            "url": "https://youtu.be/6YkcpLTO5xo?si=kVRGi0EyZDC-Oy-l"
+        }
+    ],    
+
+    "skills": [
+        "C++",
+        "Embedded Systems"
+    ],
+
+    "body": [
+        {
+            "contentType": "pg",
+            "lines": [
+                "TI-Unit is a developer tool which brings unit testing to the TI-84 graphing calculator.",
+                "I have always enjoyed building games and applications for the TI-84, but often struggled with testing my code in such a niche embedded environment.",
+                "So, I decided to build my own framework which standardizes how tests are defined in code and executed on the calculator."
+            ]
+        },
+        {
+            "contentType": "pg",
+            "lines": [
+                "The project allows the user to define standalone tests or groups of tests known as suites.",
+                "Inside a test, the user can perform assertions and log information.",
+                "All results are stored in memory.",
+                "The bulk of TI-Unit is its native UI.",
+                "The various provided menus and text panes allow the user to easily execute tests and read output."
+            ]
+        },
+        {
+            "contentType": "pg",
+            "lines": [
+                "I have written testing software for normal computers before.",
+                "However, TI-Unit runs in an embedded environment on a non-standard operating system.",
+                "I had very little memory at my disposal and no access to common mechanisms like threads or processes.",
+                "Working around these constraints was the most challenging part of the project.",
+                "To prevent memory exhaustion, I gave the user the ability to manually recycle individual test results.",
+                "Additionally, I used the long jump system call to simulate test exceptions."
+            ]
+        },
+        {
+            "contentType": "pg",
+            "lines": [
+                "The framework resides in the C++ section of my TI-84 repo linked above.",
+                "To see example tests, investigate the UI library.",
+                "All components and algorithms used in the UI are themselves tested by the framework."
+            ]
+        }
+    ]
+}

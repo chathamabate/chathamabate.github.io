@@ -1,6 +1,7 @@
 
 {
     "projects": [
+        "TIUnit",
         "GC",
         "CHUnit",
         "TIMS"

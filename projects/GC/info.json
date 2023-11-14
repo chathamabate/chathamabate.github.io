@@ -48,6 +48,11 @@
             ]
         },
         {
+            "contentType": "fg",
+            "relpath": "projects/GC/imgs/GC_Setup.png",
+            "description": "Starting garbage collection on a background thread."
+        }, 
+        {
             "contentType": "pg",
             "lines": [
                 "As my garbage collector is multithreaded, I faced many challenges mapping out different possible race conditions.",
@@ -57,6 +62,11 @@
                 "Building the collector significantly improved my ability to debug non-sequential systems."
             ]
         },
+        {
+            "contentType": "fg",
+            "relpath": "projects/GC/imgs/GC_Output.png",
+            "description": "A space with two allocated objects after a collection cycle."
+        }, 
         {
             "contentType": "pg",
             "lines": [

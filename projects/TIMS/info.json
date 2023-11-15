@@ -1,6 +1,6 @@
 
 {
-    "title": "TI Minesweeper",
+    "title": "TI-Minesweeper",
     "subtitle": "Classic Minesweeper on the TI-84 Graphing Calculator",
 
     "timeline": [
@@ -37,7 +37,7 @@
         {
             "contentType": "fg",
             "relpath": "projects/TIMS/imgs/MS_Homescreen.png",
-            "description": "The TI Minesweeper main menu."
+            "description": "The TI-Minesweeper main menu."
         },
         {
             "contentType": "pg",
@@ -55,8 +55,8 @@
         {
             "contentType": "pg",
             "lines": [
-                "While building TI Minesweeper, I needed to employ a few clever optimizations to compensate for the calculator’s slow processing speed and shortage of memory.", 
-                "Unlike in typical desktop games, TI Minesweeper does not redraw the entire screen each frame.",
+                "While building TI-Minesweeper, I needed to employ a few clever optimizations to compensate for the calculator’s slow processing speed and shortage of memory.", 
+                "Unlike in typical desktop games, TI-Minesweeper does not redraw the entire screen each frame.",
                 "Instead, the state of visible UI is stored in memory.", 
                 "When rendering a frame, only the components of the UI which have changed are redrawn.", 
                 "Additionally, buffered graphics are used to prevent visible flickering on the calculator’s screen."
@@ -65,13 +65,13 @@
         {
             "contentType": "fg",
             "relpath": "projects/TIMS/imgs/MS_Emu.png",
-            "description": "TI Minesweeper running in the CEmu emulator."
+            "description": "TI-Minesweeper running in the CEmu emulator."
         },
         {
             "contentType": "pg",
             "lines": [
                 "To play, check out the releases section of the Github repo linked above.",
-                "TI Minesweeper runs smoothly on the physical calculator and on popularly available emulators such as CEmu!"
+                "TI-Minesweeper runs smoothly on the physical calculator and on popularly available emulators such as CEmu!"
             ]
         }
     ]

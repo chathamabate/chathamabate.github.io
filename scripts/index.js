@@ -171,6 +171,7 @@ function newProjectBody(info) {
 }
 
 
+
 async function newProjectSection(dirname) {
     let info_res = await fetch(GITHUB_URL + "/projects/" + dirname + "/info.json");
     let info = await info_res.json();
@@ -181,8 +182,21 @@ async function newProjectSection(dirname) {
     let header = newProjectHeader(info);
     section.appendChild(header);
 
+    const bodyID = "projectBody" + dirname;
     let body = newProjectBody(info);
+    body.id = bodyID;
+
+    body.style.display = "none";
+
     section.appendChild(body);
+
+    header.onclick = () => {
+        // Close on Body ID.
+        let ele = document.getElementById(bodyID);
+        ele.style.display = 
+            ele.style.display === "none" 
+                ? "block" : "none";
+    };
 
     return section;
 }

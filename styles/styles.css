@@ -3,26 +3,22 @@ html {
 }
 
 body {
-    background-color: rgb(220, 220, 255);
+    background-color: var(--Orange1);
     padding: 20px;
 
     font-family: FreeMono, monospace;
 }
 
 .project {
-    background-color: rgb(240, 240, 240); 
-    border: 1px solid black;
-    border-radius: 20px;
-
     overflow: hidden;
+
+    padding: 5px;
 }
 
 /* Project Header Styles */
 
 .projectHeader {
-    background-color: white;
     padding: 10px 20px 10px 20px;
-    border-radius: 20px;
 
     display: flex;
     flex-direction: row;
@@ -66,31 +62,34 @@ body {
 }
 
 .projectHeaderSkillsSpan {
-    padding-top: .9rem;
+    padding-top: .5rem;
     font-size: .9rem;
     font-style: italic;
 }
 
 .projectHeaderLinksSpan {
     line-height: 0rem;  
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+
+    background-color: black;
+    border-radius: var(--BRad);
+    overflow: hidden;
 }
 
 .projectHeaderLinksSpan a {
     padding: 3px;
     padding-bottom: 0px;
 
-    border-radius: 10px;
-    overflow: hidden;
+    color: var(--Orange1);
 
-    color: black;
     text-decoration: none;
-    transition-duration: .3s;
+
+    transition-duration: var(--TDur);
 }
 
 .projectHeaderLinksSpan a:hover {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: var(--Green3);
 }
 
 /* Project Body Styles */
@@ -124,5 +123,30 @@ body {
 
 .projectParagraph {
     font-size: 1.0rem;
+}
+
+/* Project Read More Button */
+
+.projectReadMoreButtonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.projectReadMoreButton {
+    padding: 4px 6px 4px 6px;
+    border-radius: 8px;
+
+    font-size: .9rem;
+
+    background-color: black;
+    color: var(--Orange1);
+
+    transition-duration: var(--TDur);
+}
+
+
+.projectReadMoreButton:hover {
+    background-color: var(--Green3);
+    color: black;
 }
 

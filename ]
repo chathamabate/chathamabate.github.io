@@ -186,10 +186,10 @@ async function newProjectSection(dirname) {
     let body = newProjectBody(info);
     body.style.display = "none";
 
-    // We create body, but don't add it until later.
+    section.appendChild(body);
 
     let rmButtonContainer = document.createElement("div");
-    rmButtonContainer.classList.add("projectReadMoreButtonContainer");
+    rmButtonContainer.className.add("projectReadMoreButtonContainer");
 
     let rmButton = document.createElement("div");
     rmButton.classList.add("projectReadMoreButton");
@@ -206,10 +206,11 @@ async function newProjectSection(dirname) {
         }
     };
 
-    rmButtonContainer.appendChild(rmButton);
-    section.appendChild(rmButtonContainer);
+    rmButtonContainer.classList.add(rmButton);
 
-    section.appendChild(body);
+
+    section.appendChild(rmButton);
+
 
     return section;
 }

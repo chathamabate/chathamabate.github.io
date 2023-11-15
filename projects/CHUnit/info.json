@@ -39,8 +39,8 @@
         }, 
         {
             "contentType": "fg",
-            "relpath": "projects/CHUnit/imgs/CHUnit_Output.png",
-            "description": "Example CHUnit test output."
+            "relpath": "projects/CH-Unit/imgs/CH-Unit_Output.png",
+            "description": "Example CH-Unit test output."
         }, 
         {
 
@@ -63,8 +63,8 @@
         }, 
         {
             "contentType": "fg",
-            "relpath": "projects/CHUnit/imgs/CHUnit_Test.png",
-            "description": "Example CHUnit unit test definition."
+            "relpath": "projects/CH-Unit/imgs/CH-Unit_Test.png",
+            "description": "Example CH-Unit unit test definition."
         }, 
         {
             "contentType": "pg",

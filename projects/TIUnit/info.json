@@ -51,7 +51,7 @@
         {
             "contentType": "fg",
             "relpath": "projects/TIUnit/imgs/TIUnit_Output.png",
-            "description": "Output of a single test."
+            "description": "Test output viewed in the CEmu emulator."
         }, 
         {
             "contentType": "pg",

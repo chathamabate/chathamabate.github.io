@@ -6,19 +6,18 @@ body {
     background-color: var(--Orange1);
     padding: 20px;
 
-    font-family: FreeMono, monospace;
+    font-family: Tahoma, sans-serif;
 }
 
 .project {
     overflow: hidden;
-
     padding: 5px;
 }
 
 /* Project Header Styles */
 
 .projectHeader {
-    padding: 10px 20px 10px 20px;
+    padding: 0px 20px 0px 20px;
 
     display: flex;
     flex-direction: row;
@@ -68,18 +67,19 @@ body {
 }
 
 .projectHeaderLinksSpan {
-    line-height: 0rem;  
     font-size: 1.4rem;
-
-    background-color: black;
-    border-radius: var(--BRad);
-    overflow: hidden;
 }
 
 .projectHeaderLinksSpan a {
+    margin-left: 5px;
+
     padding: 3px;
     padding-bottom: 0px;
 
+    border-radius: var(--BRad);
+    overflow: hidden;
+
+    background-color: black;
     color: var(--Orange1);
 
     text-decoration: none;
@@ -90,39 +90,6 @@ body {
 .projectHeaderLinksSpan a:hover {
     color: black;
     background-color: var(--Green3);
-}
-
-/* Project Body Styles */
-
-.contentDivider {
-    height: 20px;
-}
-
-.projectBody {
-    padding: 10px 20px 10px 20px;
-}
-
-.projectFigureDiv {
-}
-
-.projectFigure {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    max-width: 70%;
-}
-
-.projectFigureDescription {
-    text-align: center;
-    color: rgb(50, 50, 50);
-    font-size: .9rem;
-    font-style: italic;
-    padding-top: 3px;
-}
-
-.projectParagraph {
-    font-size: 1.0rem;
 }
 
 /* Project Read More Button */
@@ -148,5 +115,47 @@ body {
 .projectReadMoreButton:hover {
     background-color: var(--Green3);
     color: black;
+
+    cursor: pointer;
 }
+
+/* Project Body Styles */
+
+.contentDivider {
+    height: 20px;
+}
+
+.projectBody {
+    margin-top: 10px;
+
+    padding: 10px 20px 10px 20px;
+    border-radius: var(--BRad);
+
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.projectFigureDiv {
+}
+
+.projectFigure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: var(--BRad);
+
+    max-width: 70%;
+}
+
+.projectFigureDescription {
+    text-align: center;
+    color: rgb(50, 50, 50);
+    font-size: .9rem;
+    font-style: italic;
+    padding-top: 3px;
+}
+
+.projectParagraph {
+    font-size: .9rem;
+}
+
 

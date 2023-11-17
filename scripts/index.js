@@ -5,6 +5,7 @@ async function main() {
     let info = await info_res.json();
 
     let c = newCard(info);
+    console.log(c);
     document.appendChild(c);
 }
 

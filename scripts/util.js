@@ -1,6 +1,4 @@
 
-const GITHUB_URL = "https://raw.githubusercontent.com/chathamabate/chathamabate.github.io/main";
-
 // Copied from some guy's blog.
 function getMonthName(monthNumber) {
   const date = new Date();

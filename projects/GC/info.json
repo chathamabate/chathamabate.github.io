@@ -49,7 +49,7 @@
         },
         {
             "contentType": "fg",
-            "relpath": "projects/statics/GC_Setup.png",
+            "relpath": "statics/GC_Setup.png",
             "description": "Starting garbage collection on a background thread."
         }, 
         {
@@ -64,7 +64,7 @@
         },
         {
             "contentType": "fg",
-            "relpath": "projects/statics/GC_Output.png",
+            "relpath": "statics/GC_Output.png",
             "description": "A space with two allocated objects after a collection cycle."
         }, 
         {

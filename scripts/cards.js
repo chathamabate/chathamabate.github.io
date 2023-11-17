@@ -55,6 +55,8 @@ function newCardTitleLine(info) {
     let titleLineDiv = newParentDiv(
         [titleDiv, dateDiv], "cardTitleLine"
     );
+
+    return titleLineDiv;
 }
 
 function newCardSubtitleLine(info) {
@@ -93,10 +95,13 @@ function newCardSpecsLine(info) {
 function newCardHeader(info) {
     let titleLine = newCardTitleLine(info);
     let subtitleLine = newCardSubtitleLine(info);
+    let specsLine = newCardSpecsLine(info);
     
     let headerDiv = newParentDiv(
         [titleLine, subtitleLine, specsLine], "cardHeader"
     );
+
+    return headerDiv;
 }
 
 // Card Body Creation
@@ -104,7 +109,7 @@ function newCardHeader(info) {
 function newCardBodyFigure(content) {
     let figureImage = document.createElement("img");
     figureImage.classList.add("cardFigureImage");
-    figureImage.src = GITHUB_URL + "/" + content.relpath;
+    figureImage.src = content.relpath;
 
     let figureDescription = newTextDiv(content.description, "cardFigureDescription");
 
@@ -179,7 +184,7 @@ function newCardBody(body) {
 
 function newCard(info) {
     let headerDiv = newCardHeader(info);
-    let bodyDiv = newCardBody(body);
+    let bodyDiv = newCardBody(info.body);
 
     let card = newParentDiv(
         [headerDiv, bodyDiv], "card"

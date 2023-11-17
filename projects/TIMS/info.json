@@ -36,7 +36,7 @@
         },
         {
             "contentType": "fg",
-            "relpath": "projects/TIMS/imgs/MS_Homescreen.png",
+            "relpath": "projects/statics/MS_Homescreen.png",
             "description": "The TI-Minesweeper main menu."
         },
         {
@@ -49,7 +49,7 @@
         },
         {
             "contentType": "fg",
-            "relpath": "projects/TIMS/imgs/MS_Gameplay.png",
+            "relpath": "projects/statics/MS_Gameplay.png",
             "description": "Example gameplay on the medium difficulty."
         },
         {
@@ -64,7 +64,7 @@
         },
         {
             "contentType": "fg",
-            "relpath": "projects/TIMS/imgs/MS_Emu.png",
+            "relpath": "projects/statics/MS_Emu.png",
             "description": "TI-Minesweeper running in the CEmu emulator."
         },
         {

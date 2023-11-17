@@ -1,44 +1,14 @@
 
+import {
+    GITHUB_URL, 
+    getMonthName, getTimelineString, 
+    newTextDiv, newParentDiv
+} from "./util.js";
 
 // This script is for generating cards!
 // Cards can be used anywhere, but are mainly
 // used for projects and work experience.
 
-const GITHUB_URL = "https://raw.githubusercontent.com/chathamabate/chathamabate.github.io/main";
-
-// Copied from some guy's blog.
-function getMonthName(monthNumber) {
-  const date = new Date();
-  date.setMonth(monthNumber - 1);
-
-  return date.toLocaleString('en-US', {
-    month: 'long',
-  });
-}
-
-function getTimelineString(timeline) {
-    let sm = timeline[0][0];
-    let sy = timeline[0][1];
-
-    let em = timeline[1][0];
-    let ey = timeline[1][1];
-
-    // Same start and end.
-    if (sm === em && sy === ey) {
-        return getMonthName(sm) + " " + sy;
-    }
-
-    let smStr = getMonthName(sm);
-    let emStr = getMonthName(em);
-
-    // Same year, but different month.
-    if (sy === ey) {
-        return smStr + "—" + emStr + " " + ey;
-    }
-
-    // Different year.
-    return smStr + " " + sy + "—" + emStr + " " + ey;
-}
 
 // A Card will have the following structure.
 //
@@ -81,26 +51,6 @@ function getTimelineString(timeline) {
 
 // Card Header Creation.
 
-function newTextDiv(text, ...classes) { 
-    let newDiv = document.createElement("div");
-    newDiv.classList.add(classes);
-    newDiv.appendChild(document.createTextNode(text));
-
-    return newDiv;
-}
-
-// Children should be an array of nodes to append.
-function newParentDiv(children, ...classes) {
-    let pDiv = document.createElement("div");
-    pDiv.classList.add(classes);
-
-    for (const c of children) {
-        pDiv.appendChild(c);
-    }
-
-    return pDiv;
-}
-
 function newCardTitleLine(info) {
     const title = info.title;
     const dateString = getTimelineString(info.timeline);
@@ -118,7 +68,7 @@ function newCardSubtitleLine(info) {
     return newTextDiv(subtitle, "cardSubtitle");
 }
 
-function newLinkDiv(link) {
+function newCardLinkDiv(link) {
     let div = document.createElement("div");
     div.classList.add("fa", link.faClass, "cardLink");
 
@@ -136,7 +86,7 @@ function newCardSpecsLine(info) {
 
     let skillsDiv = newTextDiv(skills.join(", "), "cardSkills");
 
-    let linkDivs = links.map(newLinkDiv);
+    let linkDivs = links.map(newCardLinkDiv);
     let parentLinkDiv = newParentDiv(linkDivs, "cardLinksContainer");
 
     let specsLineDiv = newParentDiv(
@@ -157,7 +107,7 @@ function newCardHeader(info) {
 
 // Card Body Creation
 
-function newBodyFigure(content) {
+function newCardBodyFigure(content) {
     let figureImage = document.createElement("img");
     figureImage.classList.add("cardFigureImage");
     figureImage.src = GITHUB_URL + "/" + content.relpath;
@@ -171,7 +121,7 @@ function newBodyFigure(content) {
     return figureDiv;
 }
 
-function newBodyParagraph(content) {
+function newCardBodyParagraph(content) {
     let pgDiv = newTextDiv(
         content.lines.join(" "),
         "cardParagraph"
@@ -180,9 +130,11 @@ function newBodyParagraph(content) {
     return pgDiv;
 }
 
-function newBody(body) {
-
-    
+function newCardBody(body) {
+    let smButtonDiv = newTextDiv("See More", "cardSMButton");
+    let smButtonContainerDiv = newParentDiv(
+        [smButtonDiv], "cardSMButtonContainer"
+    );
 
     let bodyContentDiv = document.createElement("div");
     bodyContentDiv.classList.add("cardBodyContentContainer");
@@ -201,14 +153,43 @@ function newBody(body) {
         let tag = content.contentType;
 
         if (tag === "fg") {
-            bodyContentDiv.appendChild(newBodyFigure(content)); 
+            bodyContentDiv.appendChild(newCardBodyFigure(content)); 
         } else if (tag === "pg") {
-            bodyContentDiv.appendChild(newBodyParagraph(content)); 
+            bodyContentDiv.appendChild(newCardBodyParagraph(content)); 
         }
     }
 
+    // Hook up button.
+    bodyContentDiv.style.display = "none";
+
+    const bcd = bodyContentDiv;
+    const button = smButtonDiv;
+    smButtonDiv.onclick = () => {
+        if (bcd.style.display === "none") {
+            bcd.style.display = "block";
+            button.innerText = "Show Less";
+        } else {
+            bcd.style.display = "none";
+            button.innerText = "Show More";
+        }
+    };
+
+    let bodyDiv = newParentDiv(
+        [smButtonContainerDiv, bodyContentDiv], "cardBody"
+    );
+
+    return bodyDiv;
 }
 
+// Card Creation.
 
+export function newCard(info) {
+    let headerDiv = newCardHeader(info);
+    let bodyDiv = newCardBody(body);
 
-// Generate
+    let card = newParentDiv(
+        [headerDiv, bodyDiv], "card"
+    );
+
+    return card;
+}

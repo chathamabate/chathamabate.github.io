@@ -35,7 +35,7 @@
         },
         {
             "contentType": "fg",
-            "relpath": "projects/TIUnit/imgs/TIUnit_Menu.png",
+            "relpath": "projects/statics/TIUnit_Menu.png",
             "description": "A selection of user defined tests."
         }, 
         {
@@ -50,7 +50,7 @@
         },
         {
             "contentType": "fg",
-            "relpath": "projects/TIUnit/imgs/TIUnit_Output.png",
+            "relpath": "projects/statics/TIUnit_Output.png",
             "description": "Test output viewed in the CEmu emulator."
         }, 
         {
@@ -66,7 +66,7 @@
         },
         {
             "contentType": "fg",
-            "relpath": "projects/TIUnit/imgs/TIUnit_Test.png",
+            "relpath": "projects/statics/TIUnit_Test.png",
             "description": "A test for confirming an array is sorted."
         }, 
         {

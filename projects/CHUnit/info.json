@@ -39,7 +39,7 @@
         }, 
         {
             "contentType": "fg",
-            "relpath": "projects/CHUnit/imgs/CHUnit_Output.png",
+            "relpath": "projects/statics/CHUnit_Output.png",
             "description": "Example CH-Unit test output."
         }, 
         {
@@ -63,7 +63,7 @@
         }, 
         {
             "contentType": "fg",
-            "relpath": "projects/CHUnit/imgs/CHUnit_Test.png",
+            "relpath": "projects/statics/CHUnit_Test.png",
             "description": "Example CH-Unit unit test definition."
         }, 
         {

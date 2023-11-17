@@ -192,3 +192,18 @@ function newCard(info) {
 
     return card;
 }
+
+async function newCardSection(cardPaths) {
+    let cardDivs = [];
+
+    for (const cardPath of cardPaths) {
+        let response = await fetch(cardPath);    
+        let info = await response.json();
+
+        cardDivs.push(newCard(info));
+    }
+
+    let cardSection = newParentDiv(cardDivs, "cardSection");
+
+    return cardSection;
+}

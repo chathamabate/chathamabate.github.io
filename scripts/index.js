@@ -2,13 +2,19 @@
 const GITHUB_URL = "https://chathamabate.github.io/"
 
 async function main() {
-    let info_res = await fetch(GITHUB_URL + "projects/GC/info.json");
-    let info = await info_res.json();
 
-    let c = newCard(info);
+    let relProjectPaths = [
+        "data/TIUnit.json",
+        "data/GC.json",
+        "data/CHUnit.json",
+        "data/TIMS.json",
+    ];
+
+    let projectPaths = relProjectPaths.map(rpp => GITHUB_URL + rpp);
+    let projectSection = newCardSection(projectPaths);
 
     let body = document.getElementById("b");
-    body.appendChild(c);
+    body.appendChild(projectSection);
 }
 
 main();

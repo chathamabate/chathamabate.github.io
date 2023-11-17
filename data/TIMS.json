@@ -1,0 +1,78 @@
+
+{
+    "title": "TI-Minesweeper",
+    "subtitle": "Classic Minesweeper on the TI-84 Graphing Calculator",
+
+    "timeline": [
+        [7, 2022],
+        [7, 2022]
+    ],
+   
+    "links": [
+        {
+            "faClass": "fa-github",
+            "url": "https://www.github.com/chathamabate/ti-code"
+        },
+        {
+            "faClass": "fa-youtube-play",
+            "url": "https://www.youtube.com/watch?v=7cNblC0O0A0"
+        }
+    ],
+
+    "skills": [
+        "C",
+        "Embedded Systems",
+        "Pixel Art"
+    ],
+
+    "body": [
+        {
+            "contentType": "pg",
+            "lines": [
+                "This project brings Minesweeper to the TI-84 graphing calculator!", 
+                "Ever since my introduction to C in college, I have been interested in retro computing and embedded systems.", 
+                "I felt that building a game for the TI-84 would be an enjoyable way to learn about low-level software and limited resource machines."
+            ]
+        },
+        {
+            "contentType": "fg",
+            "relpath": "statics/MS_Homescreen.png",
+            "description": "The TI-Minesweeper main menu."
+        },
+        {
+            "contentType": "pg",
+            "lines": [
+                "This project offers intuitive gameplay across all three standard Minesweeper difficulties.", 
+                "Highscores are archived and persist even if the calculator’s RAM is cleared.", 
+                "The game logic was implemented entirely in embedded C, and all sprites were hand-drawn."
+            ]
+        },
+        {
+            "contentType": "fg",
+            "relpath": "statics/MS_Gameplay.png",
+            "description": "Example gameplay on the medium difficulty."
+        },
+        {
+            "contentType": "pg",
+            "lines": [
+                "While building TI-Minesweeper, I needed to employ a few clever optimizations to compensate for the calculator’s slow processing speed and shortage of memory.", 
+                "Unlike in typical desktop games, TI-Minesweeper does not redraw the entire screen each frame.",
+                "Instead, the state of visible UI is stored in memory.", 
+                "When rendering a frame, only the components of the UI which have changed are redrawn.", 
+                "Additionally, buffered graphics are used to prevent visible flickering on the calculator’s screen."
+            ]
+        },
+        {
+            "contentType": "fg",
+            "relpath": "statics/MS_Emu.png",
+            "description": "TI-Minesweeper running in the CEmu emulator."
+        },
+        {
+            "contentType": "pg",
+            "lines": [
+                "To play, check out the releases section of the Github repo linked above.",
+                "TI-Minesweeper runs smoothly on the physical calculator and on popularly available emulators such as CEmu!"
+            ]
+        }
+    ]
+}

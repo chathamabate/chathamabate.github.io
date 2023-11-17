@@ -1,0 +1,79 @@
+
+{
+    "title": "Tri-Color Garbage Collector",
+    "subtitle": "Concurrent Memory Manager for C",
+
+    "timeline": [
+        [12, 2022],
+        [2, 2023]
+    ],
+
+    "links": [
+        {
+            "faClass": "fa-github",
+            "url": "https://www.github.com/chathamabate/chvm"
+        },
+        {
+            "faClass": "fa-youtube-play",
+            "url": "https://youtu.be/hEqIBsL_e-c?si=_yXkFuXUIk5dXjdD"
+        }
+    ],    
+
+    "skills": [
+        "C",
+        "Unix",
+        "Make",
+        "Multithreading"
+    ],
+
+    "body": [
+        {
+            "contentType": "pg",
+            "lines": [
+                "When working in a high-level language like Java or C#, memory management is often abstracted away.",
+                "The user does not need to explicitly give memory back to the computer.",
+                "Instead, this is handled innately by how the language compiles and/or executes.",
+                "I have always been fascinated by how certain languages recycle memory.",
+                "So, I decided to build my own garbage collector to learn more!"
+            ]
+        },
+        {
+            "contentType": "pg",
+            "lines": [
+                "My implementation loosely follows the tri-color design for garbage collectors.",
+                "This strategy performs a systematic graph search from a set of user defined root objects.",
+                "I used tri-coloring because it allowed my system to be entirely concurrent and non-blocking.",
+                "The user program never pauses during a collection cycle.",
+                "Instead, the collector thread pops in and out of objects without bothering the user."
+            ]
+        },
+        {
+            "contentType": "fg",
+            "relpath": "statics/GC_Setup.png",
+            "description": "Starting garbage collection on a background thread."
+        }, 
+        {
+            "contentType": "pg",
+            "lines": [
+                "As my garbage collector is multithreaded, I faced many challenges mapping out different possible race conditions.",
+                "What if the user edits an object during a collection cycle?",
+                "What if the user program is itself multithreaded?",
+                "These are examples of questions I needed to consider during my development process.",
+                "Building the collector significantly improved my ability to debug non-sequential systems."
+            ]
+        },
+        {
+            "contentType": "fg",
+            "relpath": "statics/GC_Output.png",
+            "description": "A space with two allocated objects after a collection cycle."
+        }, 
+        {
+            "contentType": "pg",
+            "lines": [
+                "To use for yourself, clone the repo!",
+                "While large, the project is composed of many independent and straightforward pieces.",
+                "The demo explains each piece’s use and API."
+            ]
+        }
+    ]
+}

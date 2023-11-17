@@ -1,10 +1,4 @@
 
-import {
-    GITHUB_URL, 
-    getMonthName, getTimelineString, 
-    newTextDiv, newParentDiv
-} from "./util.js";
-
 // This script is for generating cards!
 // Cards can be used anywhere, but are mainly
 // used for projects and work experience.
@@ -183,7 +177,7 @@ function newCardBody(body) {
 
 // Card Creation.
 
-export function newCard(info) {
+function newCard(info) {
     let headerDiv = newCardHeader(info);
     let bodyDiv = newCardBody(body);
 

@@ -1,8 +1,8 @@
 
-export const GITHUB_URL = "https://raw.githubusercontent.com/chathamabate/chathamabate.github.io/main";
+const GITHUB_URL = "https://raw.githubusercontent.com/chathamabate/chathamabate.github.io/main";
 
 // Copied from some guy's blog.
-export export function getMonthName(monthNumber) {
+function getMonthName(monthNumber) {
   const date = new Date();
   date.setMonth(monthNumber - 1);
 
@@ -11,7 +11,7 @@ export export function getMonthName(monthNumber) {
   });
 }
 
-export export function getTimelineString(timeline) {
+function getTimelineString(timeline) {
     let sm = timeline[0][0];
     let sy = timeline[0][1];
 
@@ -35,7 +35,7 @@ export export function getTimelineString(timeline) {
     return smStr + " " + sy + "—" + emStr + " " + ey;
 }
 
-export function newTextDiv(text, ...classes) { 
+function newTextDiv(text, ...classes) { 
     let newDiv = document.createElement("div");
     newDiv.classList.add(classes);
     newDiv.appendChild(document.createTextNode(text));
@@ -44,7 +44,7 @@ export function newTextDiv(text, ...classes) {
 }
 
 // Children should be an array of nodes to append.
-export function newParentDiv(children, ...classes) {
+function newParentDiv(children, ...classes) {
     let pDiv = document.createElement("div");
     pDiv.classList.add(classes);
 

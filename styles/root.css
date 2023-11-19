@@ -23,8 +23,14 @@
     --Blue3: #223d54;
     --Blue4: #1f2e52;
 
-    --Grey: rgb(200, 200, 200);
+    --Grey: rgb(55, 55, 55);
 
     --TDur: .3s;
     --BRad: 8px;
+
+   
+
+    color: black;
+    font-size: 16px;
+    font-family: Tahoma, sans-serif;
 }

@@ -64,16 +64,13 @@ function newCardSubtitleLine(info) {
     return newTextDiv(subtitle, "cardSubtitle");
 }
 
-function newCardLinkDiv(link) {
-    let div = document.createElement("div");
-    div.classList.add("fa", link.faClass, "cardLink");
+function newCardLinkAnchor(link) {
+    let anchor = document.createElement("a");
+    anchor.classList.add("fa", link.faClass, "cardLink");
 
-    const url = link.url;
-    link.onclick = () => {
-        window.open(url, "_blank");
-    };
+    anchor.href = link.url;
 
-    return div;
+    return anchor;
 }
 
 function newCardSpecsLine(info) {
@@ -82,8 +79,8 @@ function newCardSpecsLine(info) {
 
     let skillsDiv = newTextDiv(skills.join(", "), "cardSkills");
 
-    let linkDivs = links.map(newCardLinkDiv);
-    let parentLinkDiv = newParentDiv(linkDivs, "cardLinksContainer");
+    let linkAnchors = links.map(newCardLinkAnchor);
+    let parentLinkDiv = newParentDiv(linkAnchors, "cardLinksContainer");
 
     let specsLineDiv = newParentDiv(
         [skillsDiv, parentLinkDiv], "cardSpecsLine"

@@ -1,0 +1,114 @@
+
+.cardSection {
+
+}
+
+.card {
+
+}
+
+/* Header Styles */
+
+.cardHeader {
+
+}
+
+.cardTitleLine {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 1.2rem;
+}
+
+.cardTitle {
+    font-weight: 600;
+}
+
+.cardDate {
+    font-style: italic;
+}
+
+.cardSubtitle {
+    font-size: 1.0rem;
+    color: var(--Grey);
+}
+
+.cardSpecsLine {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardSkills {
+    margin-top: .5rem;
+    font-size: .9rem;
+    font-style: italic;
+}
+
+.cardLinksContainer {
+    font-size: 1.4rem;
+}
+
+.cardLink {
+    margin-left: 5px;
+    padding: 3px 3px 1px 3px;
+
+    border-radius: var(--BRad);
+
+    text-decoration: none;
+
+    color: var(--Orange1);
+    background-color: black;
+    transition-duration: var(--TDur);
+}
+
+.cardLink:hover {
+    background-color: var(--Green2);
+    color: black;
+}
+
+/* Body Styles */
+
+.cardBody {
+
+}
+
+.cardSMButtonContainer {
+
+}
+
+.cardSMButton {
+    padding: 3px;
+
+    color: var(--Orange1);
+    background-color: black;
+    transition-duration: var(--TDur);
+}
+
+.cardSMButton:hover {
+    background-color: var(--Green2);
+    color: black;
+}
+
+.cardBodyContentContainer {
+
+}
+
+.cardBodyContentDivider {
+
+}
+
+.cardFigure {
+
+}
+
+.cardFigureImage {
+
+}
+
+.cardFigureDescription {
+
+}
+
+.cardParagraph {
+
+}

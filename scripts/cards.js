@@ -90,12 +90,17 @@ function newCardSpecsLine(info) {
 }
 
 function newCardHeader(info) {
-    let titleLine = newCardTitleLine(info);
-    let subtitleLine = newCardSubtitleLine(info);
-    let specsLine = newCardSpecsLine(info);
-    
+    let lines = [
+        newCardTitleLine(info),
+        newCardSubtitleLine(info),
+    ];
+
+    if (("links" in info) && ("skills" in info)) {
+        lines.push(newCardSpecsLine(info));
+    }
+
     let headerDiv = newParentDiv(
-        [titleLine, subtitleLine, specsLine], "cardHeader"
+        lines, "cardHeader"
     );
 
     return headerDiv;

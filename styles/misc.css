@@ -3,11 +3,10 @@
 .clickable {
     border-radius: var(--BRad);
 
-    padding: 3px;
+    padding: 3px 10px 3px 10px;
 
     color: var(--Orange1);
     background-color: black;
-
     transition-duration: var(--TDur);
 }
 
@@ -16,3 +15,45 @@
     color: black;
     cursor: pointer;
 }
+
+/* ToggleDiv Styles */
+
+.toggleDiv {
+
+}
+
+.toggleDivNavBar {
+    display: flex;
+    justify-content: center;
+}
+
+.toggleDivButton {
+    margin-left: 4px;
+    margin-right: 4px;
+
+    border-radius: var(--BRad);
+
+    padding: 3px 10px 3px 10px;
+
+    transition-duration: var(--TDur);
+}
+
+.toggleDivButtonFocused {
+    background-color: black;
+    color: var(--Orange1);
+}
+
+.toggleDivButtonUnfocused {
+
+}
+
+.toggleDivButtonUnfocused:hover {
+    background-color: var(--Green2);
+    color: black;
+    cursor: pointer;
+}
+
+.toggleDivVisiblePane {
+
+}
+

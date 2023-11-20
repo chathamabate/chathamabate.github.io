@@ -67,6 +67,8 @@ function newToggleDiv(selections) {
     let buttonDivs = selections.map((s) => {
         let button = newTextDiv(s.label, "toggleDivButton", "toggleDivButtonUnfocused");
         button.linkedPane = s.pane;
+
+        return button;
     });
 
     let navBar = newParentDiv(buttonDivs, "toggleDivNavBar");

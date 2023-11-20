@@ -66,7 +66,7 @@ function newCardSubtitleLine(info) {
 
 function newCardLinkAnchor(link) {
     let anchor = document.createElement("a");
-    anchor.classList.add("fa", link.faClass, "cardLink");
+    anchor.classList.add("fa", link.faClass, "clickable", "cardLink");
 
     anchor.href = link.url;
 
@@ -127,7 +127,7 @@ function newCardBodyParagraph(content) {
 }
 
 function newCardBody(body) {
-    let smButtonDiv = newTextDiv("See More", "cardSMButton");
+    let smButtonDiv = newTextDiv("See More", "clickable", "cardSMButton");
     let smButtonContainerDiv = newParentDiv(
         [smButtonDiv], "cardSMButtonContainer"
     );

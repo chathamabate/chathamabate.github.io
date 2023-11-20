@@ -35,7 +35,9 @@ function getTimelineString(timeline) {
 
 function newTextDiv(text, ...classes) { 
     let newDiv = document.createElement("div");
-    newDiv.classList.add(classes);
+
+    classes.forEach((c) => newDiv.classList.add(c));
+
     newDiv.appendChild(document.createTextNode(text));
 
     return newDiv;
@@ -44,7 +46,7 @@ function newTextDiv(text, ...classes) {
 // Children should be an array of nodes to append.
 function newParentDiv(children, ...classes) {
     let pDiv = document.createElement("div");
-    pDiv.classList.add(classes);
+    classes.forEach((c) => pDiv.classList.add(c));
 
     for (const c of children) {
         pDiv.appendChild(c);

@@ -4,7 +4,6 @@
 }
 
 .card {
-
 }
 
 /* Header Styles */
@@ -50,45 +49,22 @@
 .cardLink {
     margin-left: 5px;
     padding: 3px 3px 1px 3px;
-
-    border-radius: var(--BRad);
-
     text-decoration: none;
-
-    color: var(--Orange1);
-    background-color: black;
-    transition-duration: var(--TDur);
-}
-
-.cardLink:hover {
-    background-color: var(--Green2);
-    color: black;
 }
 
 /* Body Styles */
 
 .cardBody {
-
 }
 
 .cardSMButtonContainer {
     display: flex;
     justify-content: center;
 
+    margin-bottom: 10px;
 }
 
 .cardSMButton {
-    padding: 3px;
-    border-radius: var(--BRad);
-
-    color: var(--Orange1);
-    background-color: black;
-    transition-duration: var(--TDur);
-}
-
-.cardSMButton:hover {
-    background-color: var(--Green2);
-    color: black;
 }
 
 .cardBodyContentContainer {
@@ -96,6 +72,8 @@
     border-radius: var(--BRad);
 
     background-color: var(--Dim);
+
+    margin-bottom: 10px;
 }
 
 .cardBodyContentDivider {

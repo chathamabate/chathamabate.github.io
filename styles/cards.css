@@ -10,7 +10,6 @@
 /* Header Styles */
 
 .cardHeader {
-
 }
 
 .cardTitleLine {
@@ -73,11 +72,14 @@
 }
 
 .cardSMButtonContainer {
+    display: flex;
+    justify-content: center;
 
 }
 
 .cardSMButton {
     padding: 3px;
+    border-radius: var(--BRad);
 
     color: var(--Orange1);
     background-color: black;
@@ -90,25 +92,33 @@
 }
 
 .cardBodyContentContainer {
+    padding: 5px 10px 5px 10px; 
+    border-radius: var(--BRad);
 
+    background-color: var(--Dim);
 }
 
 .cardBodyContentDivider {
-
+    height: 20px; 
 }
 
 .cardFigure {
-
 }
 
 .cardFigureImage {
+    display: block;
+    max-width: 80%;
 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cardFigureDescription {
-
+    color: var(--Grey);
+    font-size: .9rem;
+    text-align: center;
 }
 
 .cardParagraph {
-
+    font-size: .9rem;
 }

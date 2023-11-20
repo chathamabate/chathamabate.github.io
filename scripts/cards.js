@@ -163,10 +163,10 @@ function newCardBody(body) {
     smButtonDiv.onclick = () => {
         if (bcd.style.display === "none") {
             bcd.style.display = "block";
-            button.innerText = "Show Less";
+            button.innerText = "See Less";
         } else {
             bcd.style.display = "none";
-            button.innerText = "Show More";
+            button.innerText = "See More";
         }
     };
 

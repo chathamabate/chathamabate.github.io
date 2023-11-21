@@ -68,10 +68,10 @@
 }
 
 .cardBodyContentContainer {
-    padding: 5px 10px 5px 10px; 
     border-radius: var(--BRad);
+    padding: 10px;
 
-    background-color: var(--Dim);
+    background-color: var(--Green1);
 
     margin-bottom: 10px;
 }

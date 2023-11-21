@@ -36,8 +36,8 @@ async function main() {
 
     let toggleDiv = newToggleDiv(toggles);
 
-    let body = document.getElementById("b");
-    body.appendChild(toggleDiv);
+    let dynamicSection = document.getElementById("dyna");
+    dynamicSection.appendChild(toggleDiv);
 }
 
 main();

@@ -2,3 +2,54 @@
 body {
     background-color: var(--Orange1);
 }
+
+/* Introductory Classes */
+
+.intro {
+
+}
+
+.introHeadshot {
+    display: block;
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 50%; 
+}
+
+.introTitle {
+    padding: 5px;
+    text-align: center;
+
+    font-size: 2.0rem;
+    font-weight: 700;
+}
+
+.introLinkLine {
+    text-align: center;
+}
+
+.introLink {
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 6px 6px 3px 6px;
+}
+
+.introBlurb {
+    margin: 20px;
+    padding: 10px;
+    border-radius: var(--BRad);
+
+    background-color: var(--Green1);
+
+    font-size: .9rem;
+}
+
+/* Detail Section Container */
+
+.detailSection {
+    
+}
+
+

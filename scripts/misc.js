@@ -96,6 +96,7 @@ function newToggleDiv(selections) {
 
             navBar.focusedButton = button;
 
+            // Change visible Pane.
             visiblePaneDiv.innerHTML = "";
             visiblePaneDiv.appendChild(button.linkedPane);
         };

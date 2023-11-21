@@ -1,14 +1,23 @@
 
 .cardSection {
-
+    padding: 20px;
 }
 
 .card {
+    background-color: var(--Purple1);
+    color: white;
+
+    border-left: 5px solid var(--Purple3);
+    border-radius: var(--BRad);
+    overflow: hidden;
+
+    margin-bottom: 10px;
 }
 
 /* Header Styles */
 
 .cardHeader {
+    padding: 20px;
 }
 
 .cardTitleLine {
@@ -28,7 +37,7 @@
 
 .cardSubtitle {
     font-size: 1.0rem;
-    color: var(--Grey);
+    color: white;
 }
 
 .cardSpecsLine {
@@ -49,6 +58,8 @@
 .cardLink {
     margin-left: 5px;
     padding: 3px 3px 1px 3px;
+
+    border-radius: var(--BRad);
     text-decoration: none;
 }
 
@@ -57,23 +68,17 @@
 .cardBody {
 }
 
-.cardSMButtonContainer {
-    display: flex;
-    justify-content: center;
-
-    margin-bottom: 10px;
-}
-
 .cardSMButton {
+    padding: 3px;
+    font-size: .9rem;
+    text-align: center;
 }
 
 .cardBodyContentContainer {
-    border-radius: var(--BRad);
     padding: 10px;
 
-    background-color: var(--Green1);
-
-    margin-bottom: 10px;
+    color: black;
+    background-color: white;
 }
 
 .cardBodyContentDivider {
@@ -92,7 +97,7 @@
 }
 
 .cardFigureDescription {
-    color: var(--Grey);
+    color: var(--Blue3);
     font-size: .9rem;
     text-align: center;
 }

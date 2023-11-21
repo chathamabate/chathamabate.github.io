@@ -133,9 +133,6 @@ function newCardBodyParagraph(content) {
 
 function newCardBody(body) {
     let smButtonDiv = newTextDiv("See More", "clickable", "cardSMButton");
-    let smButtonContainerDiv = newParentDiv(
-        [smButtonDiv], "cardSMButtonContainer"
-    );
 
     let bodyContentDiv = document.createElement("div");
     bodyContentDiv.classList.add("cardBodyContentContainer");
@@ -176,7 +173,7 @@ function newCardBody(body) {
     };
 
     let bodyDiv = newParentDiv(
-        [smButtonContainerDiv, bodyContentDiv], "cardBody"
+        [smButtonDiv, bodyContentDiv], "cardBody"
     );
 
     return bodyDiv;

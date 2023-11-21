@@ -1,18 +1,14 @@
 
 
 .clickable {
-    border-radius: var(--BRad);
-
-    padding: 3px 10px 3px 10px;
-
-    color: white;
-    background-color: black;
     transition-duration: var(--TDur);
+
+    background-color: var(--Blue1);
+    color: white;
 }
 
 .clickable:hover {
-    background-color: var(--Green2);
-    color: black;
+    background-color: var(--Purple1);
     cursor: pointer;
 }
 
@@ -32,6 +28,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: var(--Orange1);
 }
 
 .toggleDivButton {
@@ -63,6 +61,8 @@
 .toggleDivVisiblePane {
     height: calc(100% - var(--NavBarHeight));
 
+    background-color: var(--Dim);
+
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -79,6 +79,6 @@
 /* Handle */
 .toggleDivVisiblePane::-webkit-scrollbar-thumb {
     border-radius: 5px;
-    background: var(--Dim);
+    background-color: var(--Dim);
 }
 

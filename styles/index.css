@@ -7,6 +7,7 @@ body {
     height: calc(var(--vh, 1vh) * 100);
 
     display: flex;
+    color: var(--Blue4);
     background-color: white;
 
     overflow: hidden;

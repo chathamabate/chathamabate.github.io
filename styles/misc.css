@@ -5,7 +5,7 @@
 
     padding: 3px 10px 3px 10px;
 
-    color: var(--Orange1);
+    color: white;
     background-color: black;
     transition-duration: var(--TDur);
 }
@@ -19,12 +19,19 @@
 /* ToggleDiv Styles */
 
 .toggleDiv {
-    padding: 20px;
+    --NavBarHeight: 40px;
+
+    height: 100%;
 }
 
 .toggleDivNavBar {
+    overflow: hidden;
+
+    height: var(--NavBarHeight);
+
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .toggleDivButton {
@@ -33,7 +40,7 @@
 
     border-radius: var(--BRad);
 
-    padding: 3px 10px 3px 10px;
+    padding: 5px;
 
     transition-duration: var(--TDur);
 }
@@ -54,6 +61,24 @@
 }
 
 .toggleDivVisiblePane {
+    height: calc(100% - var(--NavBarHeight));
 
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.toggleDivVisiblePane::-webkit-scrollbar {
+    display: block;
+    width: 10px;
+}
+
+.toggleDivVisiblePane::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+
+/* Handle */
+.toggleDivVisiblePane::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: var(--Dim);
 }
 

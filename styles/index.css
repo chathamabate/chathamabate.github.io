@@ -1,12 +1,28 @@
 
 body {
+    margin: 0px;
+
+    /* Hacky Trick from somebody's blog */
+    height: 100vh; /* Fallback */
+    height: calc(var(--vh, 1vh) * 100);
+
+    display: flex;
     background-color: var(--Orange1);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar-corner {
+    display: none;
 }
 
 /* Introductory Classes */
 
 .intro {
-
+    flex: 1.5;
+    padding: 40px;
 }
 
 .introHeadshot {
@@ -49,7 +65,24 @@ body {
 /* Detail Section Container */
 
 .detailSection {
-    
+    flex: 2; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.detailSection::-webkit-scrollbar {
+    display: block;
+    width: 10px;
+}
+
+.detailSection::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+
+/* Handle */
+.detailSection::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: var(--Dim);
 }
 
 

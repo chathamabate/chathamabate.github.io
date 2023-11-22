@@ -37,6 +37,8 @@
 }
 
 .cardTitleLine {
+    display: flex;
+    justify-content: space-between;
     font-size: 1.2rem;
 }
 
@@ -55,6 +57,8 @@
 }
 
 .cardSpecsLine {
+    display: flex;
+    justify-content: space-between;
 }
 
 .cardSkills {
@@ -75,15 +79,33 @@
     text-decoration: none;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
     .cardTitleLine {
-        display: flex;
-        justify-content: space-between;
+        display: block;
+    }
+
+    .cardTitle {
+        text-align: center;
+    }
+
+    .cardDate {
+        text-align: center;
+    }
+
+    .cardSubtitle {
+        text-align: center;
     }
     
     .cardSpecsLine {
-        display: flex;
-        justify-content: space-between;
+        display: block;
+    }
+
+    .cardSkills {
+        text-align: center;
+    }
+
+    .cardLinksContainer {
+        text-align: center;
     }
 }
 

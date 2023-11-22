@@ -100,7 +100,7 @@
 }
 
 .cardBodyContentContainer {
-    padding: 10px;
+    padding: 10px 20px 0px 20px;
 
     background-color: var(--CardBodyBGColor);
 }
@@ -121,6 +121,7 @@
 }
 
 .cardFigureDescription {
+
     font-size: .9rem;
     text-align: center;
 

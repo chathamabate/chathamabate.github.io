@@ -1,18 +1,43 @@
 
 {
-    "title": "City Year San Jose",
-    "subtitle": "Americorps Member",
+    "title": "City Year",
+    "subtitle": "San Jose, CA",
 
     "timeline": [
         [7, 2022],
         [5, 2023]
     ],
 
+    "links": [
+        {
+            "faClass": "fa-linkedin",
+            "url": "https://www.linkedin.com/company/city-year-san-jos%C3%A9-silicon-valley/"
+        }
+    ],    
+
+    "skills": [
+        "Americorps Member"
+    ],
+
     "body": [
         {
             "contentType": "pg",
             "lines": [
-                "FILL THIS IN..."
+                "After graduating from Rice, I embarked on a service year program with Americorps.",
+                "I was assigned to the seventh grade of an under-resourced middle school in Eastside San Jose.",
+                "During the school day, I assisted teachers in class and ran math tutoring sessions.",
+                "After school, my coworker and I supervised a group of approximately 20 students."
+            ]
+        },
+        {
+            "contentType": "pg",
+            "lines": [
+                "I most enjoyed the after school time.",
+                "My coworker and I would help with homework and run educational activities until 6 PM each day.",
+                "During break time, I bonded with my students by joining their pick-up soccer games.",
+                "While challenging, the year was extremely rewarding.",
+                "I helped many students build confidence inside and outside of the classroom.",
+                "I will never forget my time with City Year."
             ]
         }
     ]

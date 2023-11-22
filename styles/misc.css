@@ -1,14 +1,30 @@
 
+.miscUI {
+    --UIUnfocusedTextColor: blue;
+    --UIUnfocusedBGColor: white;
+
+    --UIHoverTextColor: white;
+    --UIHoverBGColor: blue;
+
+    --UIToggledTextColor: white;
+    --UIToggledBGColor: red;
+
+    /* Just for Toggle Content */
+    --UIBGColor: white;
+}
+
 
 .clickable {
     transition-duration: var(--TDur);
 
-    background-color: var(--Blue1);
-    color: white;
+    background-color: var(--UIUnfocusedBGColor);
+    color: var(--UIUnfocusedTextColor);
 }
 
 .clickable:hover {
-    background-color: var(--Purple1);
+    background-color: var(--UIHoverBGColor);
+    color: var(--UIHoverTextColor);
+
     cursor: pointer;
 }
 
@@ -26,42 +42,39 @@
     height: var(--NavBarHeight);
 
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: var(--Orange1);
 }
 
 .toggleDivButton {
-    margin-left: 4px;
-    margin-right: 4px;
+    flex: 1;
+    display: flex;
 
-    border-radius: var(--BRad);
-
-    padding: 5px;
+    align-items: center;
+    justify-content: center;
 
     transition-duration: var(--TDur);
 }
 
 .toggleDivButtonFocused {
-    background-color: black;
-    color: var(--Orange1);
+    background-color: var(--UIToggledBGColor);
+    color: var(--UIToggledTextColor);
 }
 
 .toggleDivButtonUnfocused {
-
+    background-color: var(--UIUnfocusedBGColor);
+    color: var(--UIUnfocusedTextColor);
 }
 
 .toggleDivButtonUnfocused:hover {
-    background-color: var(--Green2);
-    color: black;
+    background-color: var(--UIHoverBGColor);
+    color: var(--UIHoverTextColor);
+
     cursor: pointer;
 }
 
 .toggleDivVisiblePane {
     height: calc(100% - var(--NavBarHeight));
 
-    background-color: var(--Dim);
+    background-color: var(--UIBGColor);
 
     overflow-y: scroll;
     overflow-x: hidden;

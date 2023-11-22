@@ -103,7 +103,7 @@ function newToggleDiv(selections) {
     }
     
     let toggleDiv = newParentDiv(
-        [navBar, visiblePaneDiv], "toggleDiv"
+        [navBar, visiblePaneDiv], "miscUI", "toggleDiv"
     );
 
     return toggleDiv;

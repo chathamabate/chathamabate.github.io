@@ -5,11 +5,9 @@ body {
     /* Hacky Trick from somebody's blog */
     height: 100vh; /* Fallback */
     height: calc(var(--vh, 1vh) * 100);
-
-    display: flex;
-    color: var(--Blue4);
     background-color: white;
 
+    display: flex;
     overflow: hidden;
 }
 
@@ -26,6 +24,8 @@ body {
 .intro {
     flex: 1.5;
     padding: 40px;
+
+    color: black;
 }
 
 .introHeadshot {
@@ -50,17 +50,17 @@ body {
 }
 
 .introLink {
-    text-decoration: none;
-    font-size: 1.4rem;
     padding: 6px 6px 3px 6px;
+    border-radius: var(--BRad);
+    font-size: 1.4rem;
+
+    text-decoration: none;
 }
 
 .introBlurb {
     margin: 20px;
     padding: 10px;
     border-radius: var(--BRad);
-
-    background-color: var(--Green1);
 
     font-size: .9rem;
 }
@@ -69,6 +69,7 @@ body {
 
 .detailSection {
     flex: 2; 
+    padding: 20px;
 }
 
 

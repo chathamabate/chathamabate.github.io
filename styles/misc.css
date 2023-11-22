@@ -1,16 +1,17 @@
 
 .miscUI {
-    --UIUnfocusedTextColor: blue;
-    --UIUnfocusedBGColor: white;
+    --UIUnfocusedTextColor: black;
+    --UIUnfocusedBGColor: rgba(0, 0, 0, 0);
 
-    --UIHoverTextColor: white;
-    --UIHoverBGColor: blue;
+    --UIHoverTextColor: black;
+    --UIHoverBGColor: var(--Dim);
 
-    --UIToggledTextColor: white;
-    --UIToggledBGColor: red;
+    --UIToggledTextColor: var(--Blue2);
+    --UIToggledBGColor: rgba(0, 0, 0, 0);
 
     /* Just for Toggle Content */
-    --UIBGColor: white;
+    --UIBGColor: var(--Green1);
+    --UIBorderColor: black;
 }
 
 
@@ -34,6 +35,8 @@
     --NavBarHeight: 40px;
 
     height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 .toggleDivNavBar {
@@ -41,15 +44,25 @@
 
     height: var(--NavBarHeight);
 
+    border-bottom: 1px solid var(--UIBorderColor);
+    background-color: var(--UIBGColor);
+
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .toggleDivButton {
-    flex: 1;
     display: flex;
 
     align-items: center;
     justify-content: center;
+
+    padding: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+
+    border-radius: var(--BRad);
 
     transition-duration: var(--TDur);
 }

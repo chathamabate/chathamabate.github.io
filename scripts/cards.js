@@ -133,6 +133,9 @@ function newCardBodyParagraph(content) {
 
 function newCardBody(body) {
     let smButtonDiv = newTextDiv("See More", "miscUI", "clickable", "cardSMButton");
+    let smButtonContainerDiv = newParentDiv(
+        [smButtonDiv], "cardSMButtonContainer"
+    );
 
     let bodyContentDiv = document.createElement("div");
     bodyContentDiv.classList.add("cardBodyContentContainer");
@@ -173,7 +176,7 @@ function newCardBody(body) {
     };
 
     let bodyDiv = newParentDiv(
-        [smButtonDiv, bodyContentDiv], "cardBody"
+        [smButtonContainerDiv, bodyContentDiv], "cardBody"
     );
 
     return bodyDiv;
@@ -195,11 +198,21 @@ function newCard(info) {
 async function newCardSection(cardPaths) {
     let cardDivs = [];
 
-    for (const cardPath of cardPaths) {
+    for (let i = 0; i < cardPaths.length; i++) {
+        if (i > 0) {
+            let space = document.createElement("div");
+            space.classList.add("cardDivider");
+
+            cardDivs.push(space);
+        }
+
+        const cardPath = cardPaths[i];
+
         let response = await fetch(cardPath);    
         let info = await response.json();
 
         cardDivs.push(newCard(info));
+
     }
 
     let cardSection = newParentDiv(cardDivs, "cardSection");

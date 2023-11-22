@@ -1,34 +1,36 @@
 
 .cardSection {
-    --CardSectionBGColor: white;
+    --CardSectionBGColor: rgba(0, 0, 0, 0);
 
     --CardBorderColor: black;
 
-    --CardHeaderBGColor: white;
+    --CardHeaderBGColor: rgba(0, 0, 0, 0);
     --CardHeaderTextColor1: black;
-    --CardHeaderTextColor2: red;
+    --CardHeaderTextColor2: var(--Grey);
 
-    --CardBodyBGColor: white;
+    --CardBodyBGColor: rgba(0, 0, 0, 0);
     --CardBodyTextColor1: black;
-    --CardBodyTextColor2: blue;
+    --CardBodyTextColor2: var(--Grey);
 
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
     background-color: var(--CardSectionBGColor);
 }
 
 .card {
-    border-left: 5px solid var(--CardBorderColor);
-
-    border-radius: var(--BRad);
     overflow: hidden;
 
     margin-bottom: 10px;
 }
 
+.cardDivider {
+    height: 1px;
+    background-color: var(--CardBorderColor);
+}
+
 /* Header Styles */
 
 .cardHeader {
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
 
     background-color: var(--CardHeaderBGColor);
     color: var(--CardHeaderTextColor1);
@@ -82,8 +84,17 @@
 .cardBody {
 }
 
+.cardSMButtonContainer {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
 .cardSMButton {
     padding: 3px;
+    border-radius: var(--BRad);
+
     font-size: .9rem;
     text-align: center;
 }

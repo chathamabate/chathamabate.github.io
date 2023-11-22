@@ -8,11 +8,41 @@
         [8, 2020]
     ],
 
+    "links": [
+        {
+            "faClass": "fa-linkedin",
+            "url": "https://www.linkedin.com/company/datadog/"
+        }
+    ],    
+
+    "skills": [
+        "New York, NY"
+    ],
+
     "body": [
         {
             "contentType": "pg",
             "lines": [
-                "FILL THIS IN..."
+                "At Datadog, I worked as an intern on the Reference Tables team.",
+                "Reference Tables is a multipurpose addition to Datadog’s observability tools.",
+                "The product is primarily used for adding context to the logs of large scale applications.",
+                "When I joined the team, Reference Tables was being prepared for its beta release."
+            ]
+        },
+        {
+            "contentType": "pg",
+            "lines": [
+                "At the start of the summer, I used Datadog’s Synthetic Tests platform to design recurring tests for Reference Tables’ publicly facing API.",
+                "The tests would run automatically multiple times each day to confirm API endpoints were live and behaving as expected.",
+                "For the rest of my internship, I worked with many of Reference Tables’ microservices.",
+                "These were written in Go and python, and required edits and improvements throughout the summer."
+            ]
+        },
+        {
+            "contentType": "pg",
+            "lines": [
+                "My coworkers were very supportive as I learned the concepts behind microservice architectures.",
+                "I enjoyed working on a team and contributing to a real-world product!"
             ]
         }
     ]

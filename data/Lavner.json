@@ -8,11 +8,32 @@
         [7, 2021]
     ],
 
+    "links": [
+        {
+            "faClass": "fa-linkedin",
+            "url": "https://www.linkedin.com/company/lavner-education/"
+        }
+    ],    
+
+    "skills": [
+        "Houston, TX"
+    ],
+
     "body": [
         {
             "contentType": "pg",
             "lines": [
-                "FILL THIS IN..."
+                "Towards the end of my Rice career, I was considering pursuing a career in STEM education.",
+                "So, during my junior summer I decided to work at a technology summer camp for middle and elementary school students.",
+                "I taught a different tech course each week to groups of approximately 16 campers."
+            ]
+        },
+        {
+            "contentType": "pg",
+            "lines": [
+                "Over the course of the summer, I helped students learn Python, Lua, and Scratch.",
+                "My campers particularly enjoyed building command-line apps like simple calculators and text-based games.",
+                "I was most impressed with my students’ confidence and creativity while coding despite being relatively new to STEM."
             ]
         }
     ]

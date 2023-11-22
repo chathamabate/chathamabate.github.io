@@ -8,11 +8,49 @@
         [8, 2019]
     ],
 
+    "links": [
+        {
+            "faClass": "fa-linkedin",
+            "url": "https://www.linkedin.com/company/brigade-capital-management/"
+        }
+    ],    
+
+    "skills": [
+        "New York, NY"
+    ],
+
     "body": [
         {
             "contentType": "pg",
             "lines": [
-                "FILL THIS IN..."
+                "My first internship experience was with a hedge fund in New York City.",
+                "Almost all of the firm’s software was built in-house by a team of about 8 engineers.",
+                "User facing software was written primarily in C#.",
+                "These applications relied heavily upon large SQL databases maintained by the firm."
+            ]
+        },
+        {
+            "contentType": "pg",
+            "lines": [
+                "Most of my work was in optimization.",
+                "In the beginning of the summer, I worked exclusively on a nightly process which parsed emails containing financial data.",
+                "The process became exponentially slower as email volumes increased.",
+                "I parallelized the process and eliminated unnecessary calculations.",
+                "When run on the firm’s 18-core server, my edits resulted in a 45x speedup!"
+            ]
+        },
+        {
+            "contentType": "pg",
+            "lines": [
+                "My other contributions often dealt with improving UI performance for the traders.",
+                "I achieved this using C#’s relatively new async/await features.",
+                "I enjoyed learning about the backend software which makes UIs performant and responsive."
+            ]
+        },
+        {
+            "contentType": "pg",
+            "lines": [
+                "By the end of the summer, I made good friends with my teammates and greatly improved my SQL and C# skills!"
             ]
         }
     ]

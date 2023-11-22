@@ -37,11 +37,9 @@
 }
 
 .cardTitleLine {
-    display: flex;
-    justify-content: space-between;
-
     font-size: 1.2rem;
 }
+
 
 .cardTitle {
     font-weight: 600;
@@ -57,8 +55,6 @@
 }
 
 .cardSpecsLine {
-    display: flex;
-    justify-content: space-between;
 }
 
 .cardSkills {
@@ -77,6 +73,18 @@
 
     border-radius: var(--BRad);
     text-decoration: none;
+}
+
+@media screen and (min-width: 500px) {
+    .cardTitleLine {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .cardSpecsLine {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 /* Body Styles */

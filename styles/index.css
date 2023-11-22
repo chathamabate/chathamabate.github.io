@@ -13,7 +13,6 @@ body {
         display: flex;
         overflow: hidden;
     }
-
 }
 
 ::-webkit-scrollbar {

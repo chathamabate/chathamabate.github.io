@@ -1,14 +1,19 @@
 
 body {
     margin: 0px;
-
-    /* Hacky Trick from somebody's blog */
-    height: 100vh; /* Fallback */
-    height: calc(var(--vh, 1vh) * 100);
     background-color: white;
+}
 
-    display: flex;
-    overflow: hidden;
+@media screen and (min-width: 1000px) {
+    body {
+        /* Hacky Trick from somebody's blog */
+        height: 100vh; /* Fallback */
+        height: calc(var(--vh, 1vh) * 100);
+
+        display: flex;
+        overflow: hidden;
+    }
+
 }
 
 ::-webkit-scrollbar {
@@ -23,7 +28,7 @@ body {
 
 .intro {
     flex: 1.5;
-    padding: 40px;
+    padding: 40px 40px 0px 40px;
 
     color: black;
 }
@@ -59,8 +64,6 @@ body {
 
 .introBlurb {
     margin: 20px;
-    padding: 10px;
-    border-radius: var(--BRad);
 
     font-size: .9rem;
 }

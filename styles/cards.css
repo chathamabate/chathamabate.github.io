@@ -72,7 +72,9 @@
 }
 
 .cardLink {
-    margin-left: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+
     padding: 3px 3px 1px 3px;
 
     border-radius: var(--BRad);

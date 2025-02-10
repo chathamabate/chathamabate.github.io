@@ -29,6 +29,10 @@ function getTimelineString(timeline) {
         return smStr + "—" + emStr + " " + ey;
     }
 
+    if (ey === 0 || em === 0) {
+        return smStr + " " + sy + "—Present";
+    }
+
     // Different year.
     return smStr + " " + sy + "—" + emStr + " " + ey;
 }

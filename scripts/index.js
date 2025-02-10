@@ -20,6 +20,7 @@ async function main() {
     let projectSection = await newCardSection(projectPaths);
 
     let relExperiencePaths = [
+        "data/ISci.json",
         "data/CY.json",
         "data/Lavner.json",
         "data/Datadog.json",

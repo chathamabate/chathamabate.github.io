@@ -1,0 +1,40 @@
+{
+    "title": "Idaho Scientific",
+    "subtitle": "Embedded Software Developer",
+
+    "timeline": [
+        [4, 2024],
+        [2, 2025]
+    ],
+
+    "links": [
+        {
+            "faClass": "fa-linkedin",
+            "url": "https://www.linkedin.com/company/city-year-san-jos%C3%A9-silicon-valley/"
+        }
+    ],    
+
+    "skills": [
+        "Salt Lake City, UT"
+    ],
+
+    "body": [
+        {
+            "contentType": "pg",
+            "lines": [
+                "I currently work as an Embedded Software Developer for Idaho Scientific.",
+                "I primarily write low-level software which interacts with proprietary FPGA IP cores.", 
+                "The boards I target often contain both an x86 and a Xilinx MPSoC.", 
+                "Thus, I have experience with device drivers in both Linux and bare metal!", 
+                "Almost all of my work is in C and C++."
+            ]
+        },
+        {
+            "contentType": "pg",
+            "lines": [
+                "My experience thus far at Idaho Scientific has further sparked my interest in many systems software topics.", 
+                "I hope to continue to grow my knowledge of operating systems, compilers, driver development, and more as my career progresses."
+            ]
+        }
+    ]
+}

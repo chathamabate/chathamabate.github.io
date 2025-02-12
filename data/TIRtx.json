@@ -37,8 +37,9 @@
         },
         {
             "contentType": "fg",
-            "relpath": "statics/MS_Homescreen.png",
-            "description": "The TI-Minesweeper main menu."
+            "relpath": "statics/dimming_light.gif",
+            "description": "A dimming light over a reflective plane."
+
         },
         {
             "contentType": "pg",
@@ -59,8 +60,9 @@
         },
         {
             "contentType": "fg",
-            "relpath": "statics/MS_Gameplay.png",
-            "description": "Example gameplay on the medium difficulty."
+            "relpath": "statics/orbiting_satellite.gif",
+            "description": "A satellite in an eliptical orbit."
+
         },
         {
             "contentType": "pg",

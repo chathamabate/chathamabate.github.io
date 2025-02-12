@@ -1,0 +1,74 @@
+{
+    "title": "TI-RTX",
+    "subtitle": "Recursive Ray Tracing on the TI-84 Graphing Calculator",
+
+    "timeline": [
+        [4, 2024],
+        [4, 2024]
+    ],
+   
+    "links": [
+        {
+            "faClass": "fa-github",
+            "url": "https://www.github.com/chathamabate/ti-code"
+        },
+        {
+            "faClass": "fa-youtube-play",
+            "url": "https://www.youtube.com/watch?v=7cNblC0O0A0"
+        }
+    ],
+
+    "skills": [
+        "C++",
+        "Embedded Systems",
+        "Computer Graphics"
+    ],
+
+    "body": [
+        {
+            "contentType": "pg",
+            "lines": [
+                "As an undergraduate, I enjoyed learning about OpenGL and ray tracing algorithms in my Computer Graphics class.",
+                "I remember for one homework assignment I was required to implement the intersection algorithms for a series of solids.",
+                "Our implementations were then used by a ray tracing algorithm to render the given solids on screen. ",
+                "Since completing this assignment, I had always wanted to rebuild the ray tracer on my own entirely from scratch. ",
+                "Since I enjoy working with the TI-84, I decided building a ray tracer for its small LCD screen would be an interesting project!"
+            ]
+        },
+        {
+            "contentType": "fg",
+            "relpath": "statics/MS_Homescreen.png",
+            "description": "The TI-Minesweeper main menu."
+        },
+        {
+            "contentType": "pg",
+            "lines": [
+                "My ray tracer is implemented entirely in C++ and can render planes, spheres, cubes, cones, and cylinders.",
+                "All objects are paired with a set of material properties which specify color and sheen. ",
+                "Objects can even be made reflective!"
+            ]
+        },
+        {
+            "contentType": "pg",
+            "lines": [
+                "Ultimately, targeting the TI-84 proved more difficult than the work I had done in my college computer graphics class.",
+                "The TI-84 executes thousands of times slower than a modern laptop. ",
+                "In order to render in a reasonable amount of time, I needed to heavily optimize my intersection algorithms. ",
+                "Most notably, I used bounding spheres to prevent unnecessary calculations for objects occupying a small section of the screen."
+            ]
+        },
+        {
+            "contentType": "fg",
+            "relpath": "statics/MS_Gameplay.png",
+            "description": "Example gameplay on the medium difficulty."
+        },
+        {
+            "contentType": "pg",
+            "lines": [
+                "To learn more, check out my TI-84 code repo on Github! ",
+                "There are plenty of example scenes I created for testing. ",
+                "They outline how to define and render each solid!"
+            ]
+        }
+    ]
+}

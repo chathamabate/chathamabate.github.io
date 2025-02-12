@@ -10,6 +10,7 @@ async function main() {
     });
 
     let relProjectPaths = [
+        "data/TIRtx.json",
         "data/TIUnit.json",
         "data/GC.json",
         "data/CHUnit.json",
